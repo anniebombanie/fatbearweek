@@ -1,6 +1,5 @@
-# madeline
-Madeline Floating in the Sky - Animated
+# Fat Bear with Salmon
 
 A project I made as part of my #100DaysOfCode journey.
 
-See what it looks like here: 👉 https://codepen.io/anniebombanie/pen/jOWYder
+See what it looks like here: 👉 
