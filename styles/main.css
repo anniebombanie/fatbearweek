@@ -61,6 +61,14 @@ img {
   border-radius: 50% 50% 53% 47% / 70% 70% 30% 30%;
 }
 
+.bear__top--snout {
+  content: '';
+  width: 9vmin;
+  height: 7vmin;
+  display: block;
+  background-color: #be7c5d;
+}
+
 .bear__top--ear-l, .bear__top--ear-r {
   content: '';
   width: 9vmin;

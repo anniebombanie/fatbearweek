@@ -13,16 +13,15 @@ html {
 }
 
 /* --- Colours --- */
-$n: #010152;
 $o: #ffc9ad;
-$y: #f7e957;
-$brn: #be7c5d;
-$skin: #efdebd;
-$pr: #d8b9d7;
-$pk: #ffc0cb;
-$r: #dd2602;
-$w: #fff;
-$b: #000;
+$b1: #dd9b70;
+$b2: #be7c5d;
+$b3: #84424d;
+$p: #ff8d94;
+$g: #a3946e;
+$w1: #f7e5dc;
+$w2: #d2c9c7;
+$p: #502141;
 $t: transparent;
 
 @mixin pseduo-div( $w, $h ) {
@@ -71,15 +70,20 @@ img {
   &__top {
     @include w-h( 58vmin, 70vmin );
     @include align-x-center;
-    background: linear-gradient( $brn 40%, $t 40% );
+    background: linear-gradient( $b2 40%, $t 40% );
     border-radius: 50% 50% 53% 47% / 70% 70% 30% 30%;
+
+    &--snout {
+      @include pseduo-div( 9vmin, 7vmin );
+      background-color: $b2;
+    }
 
     &--ear-l,
     &--ear-r {
       @include pseduo-div( 9vmin, 7vmin );
       // border: 1px solid green;
       border-radius: 50% 50% 0% 0% / 70% 70% 0% 0%;
-      background-color: $brn;
+      background-color: $b2;
       top: 2%;
     }
 
@@ -100,7 +104,7 @@ img {
     // border: 1px solid red;
     bottom: 9%;
     border-radius: 0% 0% 80% 80% / 0% 0% 100% 100%;
-    background-color: $brn;
+    background-color: $b2;
   }
 }
 
