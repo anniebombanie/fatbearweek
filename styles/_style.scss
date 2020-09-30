@@ -17,7 +17,7 @@ $o: #ffc9ad;
 $b1: #dd9b70;
 $b2: #be7c5d;
 $b3: #84424d;
-$p: #ff8d94;
+$pk: #ff8d94;
 $g: #a3946e;
 $w1: #f7e5dc;
 $w2: #d2c9c7;
@@ -77,16 +77,28 @@ img {
       @include pseduo-div( 8.5vmin, 9vmin );
       @include align-x-center;
       border-radius: 50% / 68% 68% 33% 33%;
-      background-color: $w1;
+      background:
+        radial-gradient( 1% 0.4% at 50% 74%, $pk 0.8vmin, $t 0.9vmin ),
+        radial-gradient( 1% 1.1% at 15.5% 55%, $p 0.1vmin, $t 0.2vmin ),
+        radial-gradient( 1% 1.1% at 16% 57%, $p 0.1vmin, $t 0.2vmin ),
+        radial-gradient( 1% 1.1% at 16% 58%, $p 0.1vmin, $t 0.2vmin ),
+        radial-gradient( 1% 1.1% at 17% 59%, $p 0.1vmin, $t 0.2vmin ),
+        radial-gradient( 1% 1.1% at 17% 60%, $p 0.1vmin, $t 0.2vmin ),
+        radial-gradient( 1% 1.1% at 32% 45%, $w1 1.5vmin, $t 1.6vmin ),
+        radial-gradient( 1% 0.8% at 33% 56%, $p 1.5vmin, $t 1.6vmin ),
+        radial-gradient( 1% 1.1% at 65% 45%, $w1 1.5vmin, $t 1.6vmin ),
+        radial-gradient( 1% 0.8% at 67% 56%, $p 1.5vmin, $t 1.6vmin ),
+        radial-gradient( 1% 0.7% at 50% 69%, $p 1.6vmin, $t 1.7vmin ),
+        $w1;
       top: 23%;
 
       // nose
       &:after {
         @include pseduo-div( 3.5vmin, 2.2vmin );
-        border-radius: 45% 45% 70% 70% / 40% 40% 100% 100%;
+        border-radius: 50% 50% 80% 80% / 60% 60% 100% 100%;
         background-color: $p;
         @include align-x-center;
-        top: 30%;
+        top: 31%;
       }
     }
 
