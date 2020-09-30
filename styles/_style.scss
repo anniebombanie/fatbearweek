@@ -71,17 +71,45 @@ img {
     @include w-h( 58vmin, 70vmin );
     @include align-x-center;
     background: linear-gradient( $b2 40%, $t 40% );
-    border-radius: 50% 50% 53% 47% / 70% 70% 30% 30%;
+    border-radius: 50% / 70% 70% 30% 30%;
 
     &--snout {
-      @include pseduo-div( 9vmin, 7vmin );
-      background-color: $b2;
+      @include pseduo-div( 8.5vmin, 9vmin );
+      @include align-x-center;
+      border-radius: 50% / 68% 68% 33% 33%;
+      background-color: $w1;
+      top: 23%;
+
+      // nose
+      &:after {
+        @include pseduo-div( 3.5vmin, 2.2vmin );
+        border-radius: 45% 45% 70% 70% / 40% 40% 100% 100%;
+        background-color: $p;
+        @include align-x-center;
+        top: 30%;
+      }
+    }
+
+    &--eye-l,
+    &--eye-r {
+      @include pseduo-div( 2vmin, 2vmin );
+      border-radius: 50%;
+      top: 23%;
+    }
+
+    &--eye-l {
+      left: 37%;
+      background: radial-gradient( circle at 60% 45%, $w1 0.2vmin, $t 0.3vmin ), $p;
+    }
+
+    &--eye-r {
+      right: 37%;
+      background: radial-gradient( circle at 40% 45%, $w1 0.2vmin, $t 0.3vmin ), $p;
     }
 
     &--ear-l,
     &--ear-r {
       @include pseduo-div( 9vmin, 7vmin );
-      // border: 1px solid green;
       border-radius: 50% 50% 0% 0% / 70% 70% 0% 0%;
       background-color: $b2;
       top: 2%;
