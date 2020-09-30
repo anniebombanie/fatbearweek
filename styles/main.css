@@ -8,12 +8,17 @@ html {
           box-sizing: inherit;
 }
 
+.bear *,
+.bear *:after,
+.sbear *:before {
+  position: absolute;
+}
+
 /* --- Colours --- */
 /* --- Styles --- */
 body {
   margin: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #d8b9d7), to(#ffc0cb));
-  background: linear-gradient(#d8b9d7 50%, #ffc0cb);
+  background: #ffc9ad;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,13 +34,36 @@ body {
 }
 
 img {
-  height: 80vmin;
+  height: 70vmin;
   left: 50%;
   opacity: 0.25;
   position: fixed;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.bear {
+  height: 64vmin;
+  width: 55vmin;
+  position: relative;
+  border: 1px solid blue;
+}
+
+.bear__top {
+  height: 70vmin;
+  width: 60vmin;
+  border: 1px solid green;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #be7c5d), color-stop(40%, transparent));
+  background: linear-gradient(#be7c5d 40%, transparent 40%);
+  border-radius: 50% 50% 53% 47% / 70% 70% 30% 30%;
+}
+
+.bear__btm {
+  height: 44vmin;
+  width: 55vmin;
+  border: 1px solid red;
+  bottom: 0;
 }
 
 .cloud div {
@@ -113,7 +141,6 @@ img {
   width: 2.2vmin;
   height: 1.6vmin;
   display: block;
-  position: absolute;
   background-color: #dd2602;
   position: absolute;
   top: 99.5%;
@@ -128,7 +155,6 @@ img {
   width: 0.2vmin;
   height: 26vmin;
   display: block;
-  position: absolute;
   background-color: #7f467d;
   top: 100%;
   left: 50.2%;
@@ -147,7 +173,6 @@ img {
   width: 0;
   height: 0;
   display: block;
-  position: absolute;
   background-color: transparent;
   z-index: -10;
   border-bottom: 7vmin solid #000;
@@ -182,7 +207,7 @@ img {
 }
 
 .head__hair {
-  background-color: #d25317;
+  background-color: #ffc9ad;
 }
 
 .head__hair--fringe {
@@ -194,8 +219,7 @@ img {
   width: 38%;
   height: 30%;
   display: block;
-  position: absolute;
-  background-color: #d25317;
+  background-color: #ffc9ad;
   border-radius: 50%;
 }
 
@@ -229,7 +253,6 @@ img {
   width: 5%;
   height: 11%;
   display: block;
-  position: absolute;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 50%;
   -webkit-animation: eyes-blink 7s infinite;
@@ -264,7 +287,6 @@ img {
   width: 24%;
   height: 30%;
   display: block;
-  position: absolute;
   background-color: rgba(0, 0, 0, 0.8);
   background: radial-gradient(1% 1.5% at 20% 120%, transparent 3vmin, #000 3.1vmin, #000 5vmin, transparent 5.1vmin), radial-gradient(2.2% 1.5% at 22% 107%, transparent 3vmin, #000 3.2vmin, #000 6vmin, transparent 6vmin);
 }
@@ -300,7 +322,6 @@ img {
   width: 84%;
   height: 66%;
   display: block;
-  position: absolute;
   background-color: #010152;
   background-color: #010152;
   background-color: rgba(1, 1, 82, 0.5);
@@ -318,7 +339,6 @@ img {
   width: 82.6%;
   height: 18%;
   display: block;
-  position: absolute;
   background-color: #010152;
   border-radius: 50%;
   top: 56.7%;
@@ -333,7 +353,6 @@ img {
   height: 28%;
   display: block;
   position: absolute;
-  position: absolute;
   background: radial-gradient(circle at 50% -50%, #efdebd 72%, #fff 72.5%);
 }
 
@@ -342,7 +361,6 @@ img {
   width: 20%;
   height: 7%;
   display: block;
-  position: absolute;
   background-color: #000;
 }
 
@@ -387,7 +405,6 @@ img {
   width: 75%;
   height: 25%;
   display: block;
-  position: absolute;
 }
 
 .arm__l {
@@ -414,7 +431,6 @@ img {
   width: 100%;
   height: 100%;
   display: block;
-  position: absolute;
   background-color: yellow;
   background: radial-gradient(1% 2% at 87% 6%, #fff 2.6vmin, transparent 2.7vmin), radial-gradient(1% 2% at 90% 5%, #fff 2.2vmin, transparent 2.3vmin), radial-gradient(circle at 89% 16%, #fff 2.2vmin, transparent 2.3vmin), radial-gradient(5% 8% at 108% -50%, #010152 15.5vmin, transparent 15.6vmin);
 }
@@ -443,7 +459,6 @@ img {
   width: 75%;
   height: 100%;
   display: block;
-  position: absolute;
   -webkit-clip-path: polygon(0 0, 10% 100%, 100% 15%);
           clip-path: polygon(0 0, 10% 100%, 100% 15%);
   background: radial-gradient(2.5% 3% at 15% 5%, #fff 2.2vmin, transparent 2.3vmin), radial-gradient(2.5% 3% at 17% 12%, #fff 2.2vmin, transparent 2.3vmin), radial-gradient(2.5% 3% at 18% 12%, #fff 2.2vmin, transparent 2.3vmin), radial-gradient(6% 5% at 0% 0%, #010152 12.5vmin, transparent 12.6vmin);

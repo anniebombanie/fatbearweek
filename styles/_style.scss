@@ -6,10 +6,17 @@ html {
   box-sizing: inherit;
 }
 
+.bear *,
+.bear *:after,
+.sbear *:before {
+  position: absolute;
+}
+
 /* --- Colours --- */
 $n: #010152;
-$o: #d25317;
+$o: #ffc9ad;
 $y: #f7e957;
+$brn: #be7c5d;
 $skin: #efdebd;
 $pr: #d8b9d7;
 $pk: #ffc0cb;
@@ -23,7 +30,6 @@ $t: transparent;
   width: $w;
   height: $h;
   display: block;
-  position: absolute;
   background-color: $c;
 }
 
@@ -35,7 +41,7 @@ $t: transparent;
 /* --- Styles --- */
 body {
   margin: 0;
-  background: linear-gradient( $pr 50%, $pk );
+  background: $o;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -45,12 +51,34 @@ body {
 }
 
 img {
-  height: 80vmin;
+  height: 70vmin;
   left: 50%;
   opacity: 0.25;
   position: fixed;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.bear {
+  height: 64vmin;
+  width: 55vmin;
+  position: relative;
+  border: 1px solid blue;
+
+  &__top {
+    height: 70vmin;
+    width: 60vmin;
+    border: 1px solid green;
+    background: linear-gradient( $brn 40%, $t 40% );
+    border-radius: 50% 50% 53% 47% / 70% 70% 30% 30%;
+  }
+
+  &__btm {
+    height: 44vmin;
+    width: 55vmin;
+    border: 1px solid red;
+    bottom: 0;
+  }
 }
 
 .cloud {
