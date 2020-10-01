@@ -136,12 +136,10 @@ img {
       border-radius: 50%;
       top: 23%;
     }
-
     &--eye-l {
       left: 37%;
       background: radial-gradient( circle at 60% 45%, $w1 0.2vmin, $t 0.3vmin ), $p;
     }
-
     &--eye-r {
       right: 37%;
       background: radial-gradient( circle at 40% 45%, $w1 0.2vmin, $t 0.3vmin ), $p;
@@ -163,7 +161,6 @@ img {
         top: -5%;
       }
     }
-
     &--ear-l {
       transform: rotate( -45deg );
       left: 16%;
@@ -173,7 +170,6 @@ img {
         left: -12%;
       }
     }
-
     &--ear-r {
       transform: rotate( 45deg );
       right: 16%;
@@ -186,9 +182,12 @@ img {
 
     &--arm-l,
     &--arm-r {
-      @include w-h( 2vmin, 2vmin );
-      border-radius: 50%;
-      top: 23%;
+      @include w-h( 13vmin, 14vmin );
+      top: 38%;
+      left: 4.5%;
+      border-radius: 50% 0% 0% 80% / 20% 100% 0% 70%;
+      background-color: $b2;
+      transform: rotate( 8deg );
     }
   }
 
