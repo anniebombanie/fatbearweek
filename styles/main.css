@@ -70,8 +70,8 @@ img {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   border-radius: 50% / 70% 70% 30% 30%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #be7c5d), color-stop(40%, transparent));
-  background: linear-gradient(#be7c5d 40%, transparent 40%);
+  background: radial-gradient(1% 0.2% at 50% 40.5%, #be7c5d 11vmin, transparent 12vmin), -webkit-gradient(linear, left top, left bottom, color-stop(40%, #be7c5d), color-stop(40%, transparent));
+  background: radial-gradient(1% 0.2% at 50% 40.5%, #be7c5d 11vmin, transparent 12vmin), linear-gradient(#be7c5d 40%, transparent 40%);
   top: 1%;
 }
 
@@ -188,14 +188,14 @@ img {
 
 .bear__top--arm-l {
   left: 4.4%;
-  border-radius: 5% 0% 0% 80% / 30% 0% 0% 70%;
+  border-radius: 6% 0% 0% 80% / 35% 0% 0% 70%;
   -webkit-transform: rotate(8deg);
           transform: rotate(8deg);
 }
 
 .bear__top--arm-l::before {
   border-radius: 0% 40% 80% 0% / 0% 40% 60% 0%;
-  right: -84%;
+  right: -83%;
 }
 
 .bear__top--arm-l::after {
@@ -215,7 +215,7 @@ img {
 
 .bear__top--arm-r::before {
   border-radius: 40% 0% 0% 80% / 40% 0% 0% 60%;
-  left: -84%;
+  left: -83%;
 }
 
 .bear__top--arm-r::after {
@@ -258,7 +258,7 @@ img {
 
 .bear__top--arm-outline-l::before {
   border-radius: 0% 40% 80% 0% / 0% 40% 60% 0%;
-  right: -80%;
+  right: -78%;
 }
 
 .bear__top--arm-outline-l::after {
@@ -266,15 +266,15 @@ img {
 }
 
 .bear__top--arm-outline-r {
-  right: 3.2%;
-  border-radius: 0% 4% 80% 0% / 0% 20% 75% 0%;
+  right: 3.25%;
+  border-radius: 0% 3% 80% 0% / 0% 20% 75% 0%;
   -webkit-transform: rotate(-8deg);
           transform: rotate(-8deg);
 }
 
 .bear__top--arm-outline-r::before {
   border-radius: 40% 0% 0% 80% / 40% 0% 0% 60%;
-  left: -82%;
+  left: -80%;
 }
 
 .bear__top--arm-outline-r::after {
