@@ -155,27 +155,27 @@ img {
 }
 
 .bear__btm--leg-l {
-  border-radius: 0% 0% 60% 80% / 0% 100% 100% 50%;
+  border-radius: 0% 0% 40% 80% / 0% 100% 50% 50%;
   left: 20%;
 }
 
 .bear__btm--leg-l::before {
   border-radius: 0% 0% 0% 60% / 0% 100% 0% 100%;
-  -webkit-transform: rotate(-15deg);
-          transform: rotate(-15deg);
-  left: -55%;
+  -webkit-transform: rotate(-17deg);
+          transform: rotate(-17deg);
+  left: -51%;
 }
 
 .bear__btm--leg-r {
-  border-radius: 0% 0% 80% 60% / 100% 0% 50% 100%;
+  border-radius: 0% 0% 80% 40% / 100% 0% 50% 50%;
   right: 20%;
 }
 
 .bear__btm--leg-r::before {
   border-radius: 0% 0% 60% 0% / 100% 0% 100% 0%;
-  -webkit-transform: rotate(15deg);
-          transform: rotate(15deg);
-  right: -55%;
+  -webkit-transform: rotate(17deg);
+          transform: rotate(17deg);
+  right: -51%;
 }
 
 /* --- Animation --- */

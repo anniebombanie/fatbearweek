@@ -169,24 +169,24 @@ img {
     }
 
     &--leg-l {
-      border-radius: 0% 0% 60% 80% / 0% 100% 100% 50%;
+      border-radius: 0% 0% 40% 80% / 0% 100% 50% 50%;
       left: 20%;
 
       &::before {
         border-radius: 0% 0% 0% 60% / 0% 100% 0% 100%;
-        transform: rotate( -15deg );
-        left: -55%;
+        transform: rotate( -17deg );
+        left: -51%;
       }
     }
 
     &--leg-r {
-      border-radius: 0% 0% 80% 60% / 100% 0% 50% 100%;
+      border-radius: 0% 0% 80% 40% / 100% 0% 50% 50%;
       right: 20%;
 
       &::before {
         border-radius: 0% 0% 60% 0% / 100% 0% 100% 0%;
-        transform: rotate( 15deg );
-        right: -55%;
+        transform: rotate( 17deg );
+        right: -51%;
       }
     }
   }
