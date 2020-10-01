@@ -63,7 +63,7 @@ img {
 
 .bear__top::before {
   content: '';
-  width: 58vmin;
+  width: 57.8vmin;
   height: 68vmin;
   display: block;
   left: 50%;
@@ -191,13 +191,23 @@ img {
 }
 
 .bear__btm--leg-l, .bear__btm--leg-r {
-  width: 10vmin;
-  height: 9vmin;
+  width: 9vmin;
+  height: 8vmin;
   background-color: #84424d;
+  border: 0.6vmin solid #502141;
   bottom: -30%;
 }
 
 .bear__btm--leg-l::before, .bear__btm--leg-r::before {
+  content: '';
+  width: 10vmin;
+  height: 18vmin;
+  display: block;
+  background-color: #502141;
+  bottom: -4%;
+}
+
+.bear__btm--leg-l::after, .bear__btm--leg-r::after {
   content: '';
   width: 10vmin;
   height: 18vmin;
@@ -208,26 +218,34 @@ img {
 
 .bear__btm--leg-l {
   border-radius: 0% 0% 40% 80% / 0% 100% 50% 50%;
-  left: 20%;
+  left: 23%;
 }
 
 .bear__btm--leg-l::before {
   border-radius: 0% 0% 0% 60% / 0% 100% 0% 100%;
   -webkit-transform: rotate(-17deg);
           transform: rotate(-17deg);
-  left: -51%;
+  left: -89%;
+}
+
+.bear__btm--leg-l::after {
+  border-radius: 0% 0% 0% 60% / 0% 100% 0% 100%;
+  -webkit-transform: rotate(-17deg);
+          transform: rotate(-17deg);
+  left: -82%;
+  background-color: #84424d;
 }
 
 .bear__btm--leg-r {
   border-radius: 0% 0% 80% 40% / 100% 0% 50% 50%;
-  right: 20%;
+  right: 23%;
 }
 
 .bear__btm--leg-r::before {
   border-radius: 0% 0% 60% 0% / 100% 0% 100% 0%;
   -webkit-transform: rotate(17deg);
           transform: rotate(17deg);
-  right: -51%;
+  right: -89%;
 }
 
 /* --- Animation --- */

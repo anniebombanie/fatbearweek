@@ -76,7 +76,7 @@ img {
     top: 1%;
 
     &::before {
-      @include pseduo-div( 58vmin, 68vmin );
+      @include pseduo-div( 57.8vmin, 68vmin );
       @include align-x-center;
       border-radius: 50% / 70% 70% 30% 30%;
       background: linear-gradient( $b2 40%, $t 40% );
@@ -201,37 +201,50 @@ img {
 
     &--leg-l,
     &--leg-r {
-      @include w-h( 10vmin, 9vmin );
+      @include w-h( 9vmin, 8vmin );
       background-color: $b3;
+      border: 0.6vmin solid $p;
       bottom: -30%;
 
       &::before {
         @include pseduo-div( 10vmin, 18vmin );
+        background-color: $p;
+        bottom: -4%;
+      }
+
+      &::after {
+        @include pseduo-div( 10vmin, 18vmin );
         background-color: $b3;
-        // border: 1px dotted green;
         bottom: 0%;
       }
     }
 
     &--leg-l {
       border-radius: 0% 0% 40% 80% / 0% 100% 50% 50%;
-      left: 20%;
+      left: 23%;
 
       &::before {
         border-radius: 0% 0% 0% 60% / 0% 100% 0% 100%;
         transform: rotate( -17deg );
-        left: -51%;
+        left: -89%;
+      }
+
+      &::after {
+        border-radius: 0% 0% 0% 60% / 0% 100% 0% 100%;
+        transform: rotate( -17deg );
+        left: -82%;
+        background-color: $b3;
       }
     }
 
     &--leg-r {
       border-radius: 0% 0% 80% 40% / 100% 0% 50% 50%;
-      right: 20%;
+      right: 23%;
 
       &::before {
         border-radius: 0% 0% 60% 0% / 100% 0% 100% 0%;
         transform: rotate( 17deg );
-        right: -51%;
+        right: -89%;
       }
     }
   }
