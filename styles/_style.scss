@@ -8,7 +8,7 @@ html {
 
 .bear *,
 .bear *:after,
-.sbear *:before {
+.bear *:before {
   position: absolute;
 }
 
@@ -65,7 +65,7 @@ img {
 .bear {
   @include w-h( 55vmin, 64vmin );
   position: relative;
-  border: 1px dashed blue;
+  // border: 1px dashed blue;
 
   &__top {
     @include w-h( 58vmin, 70vmin );
@@ -150,10 +150,45 @@ img {
   &__btm {
     @include w-h( 40vmin, 20vmin );
     @include align-x-center;
-    // border: 1px solid red;
     bottom: 9%;
     border-radius: 0% 0% 80% 80% / 0% 0% 100% 100%;
-    background-color: $b2;
+    background-color: $b3;
+
+    &--leg-l,
+    &--leg-r {
+      @include w-h( 10vmin, 9vmin );
+      background-color: $b3;
+      bottom: -30%;
+
+      &::before {
+        @include pseduo-div( 10vmin, 18vmin );
+        background-color: $b3;
+        // border: 1px dotted green;
+        bottom: 0%;
+      }
+    }
+
+    &--leg-l {
+      border-radius: 0% 0% 60% 80% / 0% 100% 100% 50%;
+      left: 20%;
+
+      &::before {
+        border-radius: 0% 0% 0% 60% / 0% 100% 0% 100%;
+        transform: rotate( -15deg );
+        left: -55%;
+      }
+    }
+
+    &--leg-r {
+      border-radius: 0% 0% 80% 60% / 100% 0% 50% 100%;
+      right: 20%;
+
+      &::before {
+        border-radius: 0% 0% 60% 0% / 100% 0% 100% 0%;
+        transform: rotate( 15deg );
+        right: -55%;
+      }
+    }
   }
 }
 
