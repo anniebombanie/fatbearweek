@@ -191,25 +191,93 @@ img {
         background-color: $b2;
         bottom: 0%;
       }
+
+      // inner curve
+      &::after {
+        @include pseduo-div( 7vmin, 5vmin );
+        background-color: $b2;
+        border-bottom: 0.6vmin solid $p;
+        top: 0%;
+      }
     }
     &--arm-l {
       left: 4.4%;
-      border-radius: 20% 0% 0% 80% / 20% 100% 0% 70%;
+      border-radius: 5% 0% 0% 80% / 30% 0% 0% 70%;
       transform: rotate( 8deg );
 
       &::before {
         border-radius: 0% 40% 80% 0% / 0% 40% 60% 0%;
         right: -84%;
       }
+
+      &::after {
+        border-radius: 20% 50% 0% 100% / 100% 0% 0% 100% ;
+        border-left: 0.6vmin solid $p;
+        transform: rotate( -deg );
+        right: -50%;
+      }
     }
     &--arm-r {
-      right: 4.4%;
-      border-radius: 0% 20% 80% 0% / 100% 20% 70% 0%;
+      right: 4.7%;
+      border-radius: 0% 5% 80% 0% / 0% 30% 70% 0%;
       transform: rotate( -8deg );
 
       &::before {
         border-radius: 40% 0% 0% 80% / 40% 0% 0% 60%;
         left: -84%;
+      }
+
+      &::after {
+        border-radius: 50% 20% 100% 0% / 0% 100% 100% 0% ;
+        border-right: 0.6vmin solid $p;
+        left: -50%;
+      }
+    }
+
+    &--arm-outline-l,
+    &--arm-outline-r {
+      @include w-h( 14vmin, 14vmin );
+      top: 39.5%;
+      background-color: $p;
+
+      &::before {
+        @include pseduo-div( 12vmin, 10.3vmin );
+        background-color: $p;
+        bottom: 0%;
+      }
+
+      &::after {
+        @include pseduo-div( 5vmin, 5vmin );
+        background-color: $b2;
+        bottom: 60%;
+      }
+    }
+    &--arm-outline-l {
+      left: 3.2%;
+      border-radius: 4% 0% 0% 88% / 30% 0% 0% 80%;
+      transform: rotate( 8deg );
+
+      &::before {
+        border-radius: 0% 40% 80% 0% / 0% 40% 60% 0%;
+        right: -80%;
+      }
+
+      &::after {
+        left: 80%;
+      }
+    }
+    &--arm-outline-r {
+      right: 3.2%;
+      border-radius: 0% 4% 80% 0% / 0% 20% 75% 0%;
+      transform: rotate( -8deg );
+
+      &::before {
+        border-radius: 40% 0% 0% 80% / 40% 0% 0% 60%;
+        left: -82%;
+      }
+
+      &::after {
+        right: 82%;
       }
     }
   }
