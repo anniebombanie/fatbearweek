@@ -76,11 +76,11 @@ img {
     top: 1%;
 
     &::before {
-      @include pseduo-div( 57.8vmin, 68vmin );
+      @include pseduo-div( 57vmin, 68vmin );
       @include align-x-center;
       border-radius: 50% / 70% 70% 30% 30%;
       background: linear-gradient( $b2 40%, $t 40% );
-      top: 0.8%;
+      top: 0.9%;
     }
 
     &::after {
@@ -88,8 +88,8 @@ img {
       @include align-x-center;
       top: 4%;
       background:
-        linear-gradient( 49deg, $t 0.6vmin, $b2 0.7vmin, $b2 2vmin, $t 2.1vmin ),
-        linear-gradient( -49deg, $t 0.6vmin, $b2 0.7vmin, $b2 2vmin, $t 2.1vmin );
+        linear-gradient( 49deg, $t 0.45vmin, $b2 0.5vmin, $b2 1.7vmin, $t 1.8vmin ),
+        linear-gradient( -49deg, $t 0.45vmin, $b2 0.5vmin, $b2 1.7vmin, $t 1.8vmin );
     }
 
     &--snout {
@@ -152,13 +152,13 @@ img {
       @include w-h( 9vmin, 7vmin );
       border-radius: 50% 50% 0% 0% / 70% 70% 0% 0%;
       background-color: $b2;
-      border: 0.6vmin solid $p;
+      border: 0.8vmin solid $p;
       top: 2%;
       overflow: hidden;
 
       &::before {
         @include pseduo-div( 7vmin, 7vmin );
-        border: 0.4vmin solid $p;
+        border: 0.5vmin solid $p;
         background-color: $pk;
         top: -5%;
       }
@@ -170,7 +170,7 @@ img {
 
       &::before {
         border-radius: 60% 50% 10% 10% / 70% 70% 20% 10%;
-        left: -7%;
+        left: -12%;
       }
     }
 
@@ -180,7 +180,7 @@ img {
 
       &::before {
         border-radius: 50% 60% 10% 10% / 70% 70% 10% 20%;
-        right: -7%;
+        right: -12%;
       }
     }
 
