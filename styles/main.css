@@ -70,7 +70,7 @@ img {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   border-radius: 50% / 68% 68% 33% 33%;
-  background: radial-gradient(1% 0.4% at 50% 74%, #ff8d94 0.8vmin, transparent 0.9vmin), radial-gradient(1% 1.1% at 15.5% 55%, #502141 0.1vmin, transparent 0.2vmin), radial-gradient(1% 1.1% at 16% 57%, #502141 0.1vmin, transparent 0.2vmin), radial-gradient(1% 1.1% at 16% 58%, #502141 0.1vmin, transparent 0.2vmin), radial-gradient(1% 1.1% at 17% 59%, #502141 0.1vmin, transparent 0.2vmin), radial-gradient(1% 1.1% at 17% 60%, #502141 0.1vmin, transparent 0.2vmin), radial-gradient(1% 1.1% at 32% 45%, #f7e5dc 1.5vmin, transparent 1.6vmin), radial-gradient(1% 0.8% at 33% 56%, #502141 1.5vmin, transparent 1.6vmin), radial-gradient(1% 1.1% at 65% 45%, #f7e5dc 1.5vmin, transparent 1.6vmin), radial-gradient(1% 0.8% at 67% 56%, #502141 1.5vmin, transparent 1.6vmin), radial-gradient(1% 0.7% at 50% 69%, #502141 1.6vmin, transparent 1.7vmin), #f7e5dc;
+  background: radial-gradient(1% 0.4% at 50% 75%, #ff8d94 0.8vmin, transparent 0.9vmin), radial-gradient(1% 1.1% at 15.5% 56%, #502141 0.08vmin, transparent 0.1vmin), radial-gradient(1% 1.1% at 15.5% 57%, #502141 0.1vmin, transparent 0.2vmin), radial-gradient(1% 1.1% at 16% 58%, #502141 0.1vmin, transparent 0.2vmin), radial-gradient(1% 1.1% at 16% 59%, #502141 0.1vmin, transparent 0.2vmin), radial-gradient(1% 1.1% at 17% 60%, #502141 0.1vmin, transparent 0.2vmin), radial-gradient(1% 1.1% at 17% 61%, #502141 0.1vmin, transparent 0.2vmin), radial-gradient(1% 1.1% at 32% 46%, #f7e5dc 1.5vmin, transparent 1.6vmin), radial-gradient(1% 0.8% at 33% 57%, #502141 1.5vmin, transparent 1.6vmin), radial-gradient(1% 1.1% at 84% 56%, #502141 0.08vmin, transparent 0.1vmin), radial-gradient(1% 1.1% at 84% 57%, #502141 0.1vmin, transparent 0.2vmin), radial-gradient(1% 1.1% at 84% 58%, #502141 0.1vmin, transparent 0.2vmin), radial-gradient(1% 1.1% at 84% 59%, #502141 0.1vmin, transparent 0.2vmin), radial-gradient(1% 1.1% at 83% 60%, #502141 0.1vmin, transparent 0.2vmin), radial-gradient(1% 1.1% at 83% 61%, #502141 0.1vmin, transparent 0.2vmin), radial-gradient(1% 1.1% at 68.2% 46%, #f7e5dc 1.5vmin, transparent 1.6vmin), radial-gradient(1% 0.8% at 67% 57%, #502141 1.5vmin, transparent 1.6vmin), radial-gradient(1% 0.7% at 50% 70%, #502141 1.6vmin, transparent 1.7vmin), #f7e5dc;
   top: 23%;
 }
 
@@ -84,7 +84,7 @@ img {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: 31%;
+  top: 32%;
 }
 
 .bear__top--eye-l, .bear__top--eye-r {
