@@ -68,10 +68,29 @@ img {
   // border: 1px dashed blue;
 
   &__top {
-    @include w-h( 58vmin, 70vmin );
+    @include w-h( 59vmin, 69vmin );
     @include align-x-center;
-    background: linear-gradient( $b2 40%, $t 40% );
+    background:
+      linear-gradient( $p 40%, $t 40% );
     border-radius: 50% / 70% 70% 30% 30%;
+    top: 1%;
+
+    &::before {
+      @include pseduo-div( 58vmin, 68vmin );
+      @include align-x-center;
+      border-radius: 50% / 70% 70% 30% 30%;
+      background: linear-gradient( $b2 40%, $t 40% );
+      top: 0.8%;
+    }
+
+    &::after {
+      @include pseduo-div( 23vmin, 1.4vmin );
+      @include align-x-center;
+      top: 4%;
+      background:
+        linear-gradient( 49deg, $t 0.6vmin, $b2 0.7vmin, $b2 2vmin, $t 2.1vmin ),
+        linear-gradient( -49deg, $t 0.6vmin, $b2 0.7vmin, $b2 2vmin, $t 2.1vmin );
+    }
 
     &--snout {
       @include pseduo-div( 8.5vmin, 9vmin );
@@ -113,7 +132,7 @@ img {
 
     &--eye-l,
     &--eye-r {
-      @include pseduo-div( 2vmin, 2vmin );
+      @include w-h( 2vmin, 2vmin );
       border-radius: 50%;
       top: 23%;
     }
@@ -130,20 +149,46 @@ img {
 
     &--ear-l,
     &--ear-r {
-      @include pseduo-div( 9vmin, 7vmin );
+      @include w-h( 9vmin, 7vmin );
       border-radius: 50% 50% 0% 0% / 70% 70% 0% 0%;
       background-color: $b2;
+      border: 0.6vmin solid $p;
       top: 2%;
+      overflow: hidden;
+
+      &::before {
+        @include pseduo-div( 7vmin, 7vmin );
+        border: 0.4vmin solid $p;
+        background-color: $pk;
+        top: -5%;
+      }
     }
 
     &--ear-l {
       transform: rotate( -45deg );
       left: 16%;
+
+      &::before {
+        border-radius: 60% 50% 10% 10% / 70% 70% 20% 10%;
+        left: -7%;
+      }
     }
 
     &--ear-r {
       transform: rotate( 45deg );
       right: 16%;
+
+      &::before {
+        border-radius: 50% 60% 10% 10% / 70% 70% 10% 20%;
+        right: -7%;
+      }
+    }
+
+    &--arm-l,
+    &--arm-r {
+      @include w-h( 2vmin, 2vmin );
+      border-radius: 50%;
+      top: 23%;
     }
   }
 

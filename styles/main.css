@@ -50,14 +50,41 @@ img {
 }
 
 .bear__top {
-  width: 58vmin;
-  height: 70vmin;
+  width: 59vmin;
+  height: 69vmin;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #502141), color-stop(40%, transparent));
+  background: linear-gradient(#502141 40%, transparent 40%);
+  border-radius: 50% / 70% 70% 30% 30%;
+  top: 1%;
+}
+
+.bear__top::before {
+  content: '';
+  width: 58vmin;
+  height: 68vmin;
+  display: block;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 50% / 70% 70% 30% 30%;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #be7c5d), color-stop(40%, transparent));
   background: linear-gradient(#be7c5d 40%, transparent 40%);
-  border-radius: 50% / 70% 70% 30% 30%;
+  top: 0.8%;
+}
+
+.bear__top::after {
+  content: '';
+  width: 23vmin;
+  height: 1.4vmin;
+  display: block;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 4%;
+  background: linear-gradient(49deg, transparent 0.6vmin, #be7c5d 0.7vmin, #be7c5d 2vmin, transparent 2.1vmin), linear-gradient(-49deg, transparent 0.6vmin, #be7c5d 0.7vmin, #be7c5d 2vmin, transparent 2.1vmin);
 }
 
 .bear__top--snout {
@@ -87,10 +114,8 @@ img {
 }
 
 .bear__top--eye-l, .bear__top--eye-r {
-  content: '';
   width: 2vmin;
   height: 2vmin;
-  display: block;
   border-radius: 50%;
   top: 23%;
 }
@@ -106,13 +131,23 @@ img {
 }
 
 .bear__top--ear-l, .bear__top--ear-r {
-  content: '';
   width: 9vmin;
   height: 7vmin;
-  display: block;
   border-radius: 50% 50% 0% 0% / 70% 70% 0% 0%;
   background-color: #be7c5d;
+  border: 0.6vmin solid #502141;
   top: 2%;
+  overflow: hidden;
+}
+
+.bear__top--ear-l::before, .bear__top--ear-r::before {
+  content: '';
+  width: 7vmin;
+  height: 7vmin;
+  display: block;
+  border: 0.4vmin solid #502141;
+  background-color: #ff8d94;
+  top: -5%;
 }
 
 .bear__top--ear-l {
@@ -121,10 +156,27 @@ img {
   left: 16%;
 }
 
+.bear__top--ear-l::before {
+  border-radius: 60% 50% 10% 10% / 70% 70% 20% 10%;
+  left: -7%;
+}
+
 .bear__top--ear-r {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   right: 16%;
+}
+
+.bear__top--ear-r::before {
+  border-radius: 50% 60% 10% 10% / 70% 70% 10% 20%;
+  right: -7%;
+}
+
+.bear__top--arm-l, .bear__top--arm-r {
+  width: 2vmin;
+  height: 2vmin;
+  border-radius: 50%;
+  top: 23%;
 }
 
 .bear__btm {
