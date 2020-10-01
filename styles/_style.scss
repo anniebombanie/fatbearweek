@@ -76,21 +76,21 @@ img {
     top: 1%;
 
     &::before {
-      @include pseduo-div( 57vmin, 68vmin );
+      @include pseduo-div( 57.6vmin, 68vmin );
       @include align-x-center;
       border-radius: 50% / 70% 70% 30% 30%;
       background: linear-gradient( $b2 40%, $t 40% );
-      top: 0.9%;
+      top: 1%;
     }
 
-    &::after {
-      @include pseduo-div( 23vmin, 1.4vmin );
-      @include align-x-center;
-      top: 4%;
-      background:
-        linear-gradient( 49deg, $t 0.45vmin, $b2 0.5vmin, $b2 1.7vmin, $t 1.8vmin ),
-        linear-gradient( -49deg, $t 0.45vmin, $b2 0.5vmin, $b2 1.7vmin, $t 1.8vmin );
-    }
+    // &::after {
+    //   @include pseduo-div( 23vmin, 1.4vmin );
+    //   @include align-x-center;
+    //   top: 4%;
+    //   background:
+    //     linear-gradient( 49deg, $t 0.5vmin, $b2 0.55vmin, $b2 1.8vmin, $t 1.9vmin ),
+    //     linear-gradient( -49deg, $t 0.5vmin, $b2 0.55vmin, $b2 1.8vmin, $t 1.9vmin );
+    // }
 
     &--snout {
       @include pseduo-div( 8.5vmin, 9vmin );
@@ -98,7 +98,8 @@ img {
       border-radius: 50% / 68% 68% 33% 33%;
       background:
         radial-gradient( 1% 0.4% at 50% 75%, $pk 0.8vmin, $t 0.9vmin ),
-        radial-gradient( 1% 1.1% at 15.5% 56%, $p 0.08vmin, $t 0.1vmin ),
+        // left smile
+        radial-gradient( 1% 1.1% at 15.5% 55%, $p 0.09vmin, $t 0.15vmin ),
         radial-gradient( 1% 1.1% at 15.5% 57%, $p 0.1vmin, $t 0.2vmin ),
         radial-gradient( 1% 1.1% at 16% 58%, $p 0.1vmin, $t 0.2vmin ),
         radial-gradient( 1% 1.1% at 16% 59%, $p 0.1vmin, $t 0.2vmin ),
@@ -106,14 +107,13 @@ img {
         radial-gradient( 1% 1.1% at 17% 61%, $p 0.1vmin, $t 0.2vmin ),
         radial-gradient( 1% 1.1% at 32% 46%, $w1 1.5vmin, $t 1.6vmin ),
         radial-gradient( 1% 0.8% at 33% 57%, $p 1.5vmin, $t 1.6vmin ),
-
-        radial-gradient( 1% 1.1% at 84% 56%, $p 0.08vmin, $t 0.1vmin ),
-        radial-gradient( 1% 1.1% at 84% 57%, $p 0.1vmin, $t 0.2vmin ),
+        // right smile
+        radial-gradient( 1% 1.1% at 84.5% 55%, $p 0.09vmin, $t 0.15vmin ),
+        radial-gradient( 1% 1.1% at 84.5% 57%, $p 0.1vmin, $t 0.2vmin ),
         radial-gradient( 1% 1.1% at 84% 58%, $p 0.1vmin, $t 0.2vmin ),
         radial-gradient( 1% 1.1% at 84% 59%, $p 0.1vmin, $t 0.2vmin ),
         radial-gradient( 1% 1.1% at 83% 60%, $p 0.1vmin, $t 0.2vmin ),
         radial-gradient( 1% 1.1% at 83% 61%, $p 0.1vmin, $t 0.2vmin ),
-
         radial-gradient( 1% 1.1% at 68.2% 46%, $w1 1.5vmin, $t 1.6vmin ),
         radial-gradient( 1% 0.8% at 67% 57%, $p 1.5vmin, $t 1.6vmin ),
         radial-gradient( 1% 0.7% at 50% 70%, $p 1.6vmin, $t 1.7vmin ),
@@ -152,7 +152,7 @@ img {
       @include w-h( 9vmin, 7vmin );
       border-radius: 50% 50% 0% 0% / 70% 70% 0% 0%;
       background-color: $b2;
-      border: 0.8vmin solid $p;
+      border: 0.7vmin solid $p;
       top: 2%;
       overflow: hidden;
 
@@ -198,24 +198,24 @@ img {
     bottom: 9%;
     border-radius: 0% 0% 80% 80% / 0% 0% 100% 100%;
     background-color: $b3;
+    border-bottom: 0.7vmin solid $p;
 
     &--leg-l,
     &--leg-r {
       @include w-h( 9vmin, 8vmin );
       background-color: $b3;
-      border: 0.6vmin solid $p;
       bottom: -30%;
 
       &::before {
         @include pseduo-div( 10vmin, 18vmin );
-        background-color: $p;
-        bottom: -4%;
+        background-color: $b3;
+        bottom: -1%;
       }
 
       &::after {
-        @include pseduo-div( 10vmin, 18vmin );
+        @include pseduo-div( 10vmin, 14vmin );
         background-color: $b3;
-        bottom: 0%;
+        bottom: 72.5%;
       }
     }
 
@@ -225,15 +225,13 @@ img {
 
       &::before {
         border-radius: 0% 0% 0% 60% / 0% 100% 0% 100%;
-        transform: rotate( -17deg );
-        left: -89%;
+        transform: rotate( -20deg );
+        left: -65%;
       }
 
       &::after {
-        border-radius: 0% 0% 0% 60% / 0% 100% 0% 100%;
-        transform: rotate( -17deg );
-        left: -82%;
-        background-color: $b3;
+        border-radius: 0% 0% 0% 100% / 0% 100% 0% 100%;
+        left: 1%;
       }
     }
 
@@ -243,8 +241,48 @@ img {
 
       &::before {
         border-radius: 0% 0% 60% 0% / 100% 0% 100% 0%;
-        transform: rotate( 17deg );
-        right: -89%;
+        transform: rotate( 20deg );
+        right: -65%;
+      }
+
+      &::after {
+        border-radius: 0% 0% 100% 0% / 100% 0% 100% 0%;
+        right: 1%;
+      }
+    }
+
+    &--leg-outline-l,
+    &--leg-outline-r {
+      @include w-h( 9vmin, 8vmin );
+      background-color: $p;
+      bottom: -33%;
+
+      &::before {
+        @include pseduo-div( 11vmin, 19vmin );
+        background-color: $p;
+        bottom: -10%;
+      }
+    }
+
+    &--leg-outline-l {
+      border-radius: 0% 0% 50% 80% / 0% 100% 75% 50%;
+      left: 24.5%;
+
+      &::before {
+        border-radius: 0% 0% 0% 70% / 0% 100% 0% 100%;
+        transform: rotate( -19deg );
+        left: -78%;
+      }
+    }
+
+    &--leg-outline-r {
+      border-radius: 0% 0% 80% 50% / 100% 0% 50% 75%;
+      right: 24.5%;
+
+      &::before {
+        border-radius: 0% 0% 70% 0% / 100% 0% 100% 0%;
+        transform: rotate( 19deg );
+        right: -78%;
       }
     }
   }
