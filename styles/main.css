@@ -163,12 +163,41 @@ img {
 .bear__top--arm-l, .bear__top--arm-r {
   width: 13vmin;
   height: 14vmin;
-  top: 38%;
-  left: 4.5%;
-  border-radius: 50% 0% 0% 80% / 20% 100% 0% 70%;
+  top: 38.5%;
   background-color: #be7c5d;
+}
+
+.bear__top--arm-l::before, .bear__top--arm-r::before {
+  content: '';
+  width: 11vmin;
+  height: 9vmin;
+  display: block;
+  background-color: #be7c5d;
+  bottom: 0%;
+}
+
+.bear__top--arm-l {
+  left: 4.4%;
+  border-radius: 20% 0% 0% 80% / 20% 100% 0% 70%;
   -webkit-transform: rotate(8deg);
           transform: rotate(8deg);
+}
+
+.bear__top--arm-l::before {
+  border-radius: 0% 40% 80% 0% / 0% 40% 60% 0%;
+  right: -84%;
+}
+
+.bear__top--arm-r {
+  right: 4.4%;
+  border-radius: 0% 20% 80% 0% / 100% 20% 70% 0%;
+  -webkit-transform: rotate(-8deg);
+          transform: rotate(-8deg);
+}
+
+.bear__top--arm-r::before {
+  border-radius: 40% 0% 0% 80% / 40% 0% 0% 60%;
+  left: -84%;
 }
 
 .bear__btm {

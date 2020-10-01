@@ -183,11 +183,34 @@ img {
     &--arm-l,
     &--arm-r {
       @include w-h( 13vmin, 14vmin );
-      top: 38%;
-      left: 4.5%;
-      border-radius: 50% 0% 0% 80% / 20% 100% 0% 70%;
+      top: 38.5%;
       background-color: $b2;
+
+      &::before {
+        @include pseduo-div( 11vmin, 9vmin );
+        background-color: $b2;
+        bottom: 0%;
+      }
+    }
+    &--arm-l {
+      left: 4.4%;
+      border-radius: 20% 0% 0% 80% / 20% 100% 0% 70%;
       transform: rotate( 8deg );
+
+      &::before {
+        border-radius: 0% 40% 80% 0% / 0% 40% 60% 0%;
+        right: -84%;
+      }
+    }
+    &--arm-r {
+      right: 4.4%;
+      border-radius: 0% 20% 80% 0% / 100% 20% 70% 0%;
+      transform: rotate( -8deg );
+
+      &::before {
+        border-radius: 40% 0% 0% 80% / 40% 0% 0% 60%;
+        left: -84%;
+      }
     }
   }
 
