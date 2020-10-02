@@ -65,7 +65,6 @@ img {
 .bear {
   @include w-h( 55vmin, 64vmin );
   position: relative;
-  // border: 1px dashed blue;
 
   &__top {
     @include w-h( 58.9vmin, 69vmin );
@@ -80,7 +79,7 @@ img {
       @include align-x-center;
       border-radius: 50% / 70% 70% 30% 30%;
       background:
-        radial-gradient( 1% 0.2% at 50% 40.5%, $b2 11vmin, $t 12vmin ),
+        radial-gradient( 1% 0.2% at 50% 40.5%, $b2 20vmin, $t 21vmin ),
         linear-gradient( $b2 40%, $t 40% );
       top: 1%;
     }
@@ -181,13 +180,20 @@ img {
         right: -12%;
       }
     }
+  }
+
+  &__mid {
+    @include w-h( 59vmin, 20vmin );
+    @include align-x-center;
+    top: 40%;
 
     &--arm-l,
     &--arm-r {
       @include w-h( 13vmin, 14vmin );
-      top: 38.5%;
+      top: 10%;
       background-color: $b2;
 
+      // paws
       &::before {
         @include pseduo-div( 11vmin, 9vmin );
         background-color: $b2;
@@ -197,13 +203,13 @@ img {
       // inner curve
       &::after {
         @include pseduo-div( 7vmin, 5vmin );
-        background-color: $b2;
+        background-color: $t;
         border-bottom: 0.6vmin solid $p;
         top: 0%;
       }
     }
     &--arm-l {
-      left: 4.4%;
+      left: 4.2%;
       border-radius: 6% 0% 0% 80% / 35% 0% 0% 70%;
       transform: rotate( 8deg );
 
@@ -223,12 +229,12 @@ img {
       right: 4.5%;
       border-radius: 0% 5% 80% 0% / 0% 30% 70% 0%;
       transform: rotate( -8deg );
-
+  
       &::before {
         border-radius: 40% 0% 0% 80% / 40% 0% 0% 60%;
         left: -83%;
       }
-
+  
       &::after {
         border-radius: 50% 20% 100% 0% / 0% 100% 100% 0% ;
         border-right: 0.6vmin solid $p;
@@ -238,8 +244,8 @@ img {
 
     &--arm-outline-l,
     &--arm-outline-r {
-      @include w-h( 14vmin, 14vmin );
-      top: 39.5%;
+      @include w-h( 13.6vmin, 14vmin );
+      top: 13.5%;
       background-color: $p;
 
       &::before {
@@ -249,23 +255,24 @@ img {
       }
 
       &::after {
-        @include pseduo-div( 5vmin, 5vmin );
+        @include pseduo-div( 6vmin, 2vmin );
         background-color: $b2;
-        bottom: 60%;
+        border-radius: 50%;
+        bottom: 65%;
       }
     }
     &--arm-outline-l {
-      left: 3.2%;
+      left: 3%;
       border-radius: 4% 0% 0% 88% / 30% 0% 0% 80%;
       transform: rotate( 8deg );
 
       &::before {
         border-radius: 0% 40% 80% 0% / 0% 40% 60% 0%;
-        right: -78%;
+        right: -84%;
       }
 
       &::after {
-        left: 80%;
+        left: 71%;
       }
     }
     &--arm-outline-r {
@@ -275,11 +282,11 @@ img {
 
       &::before {
         border-radius: 40% 0% 0% 80% / 40% 0% 0% 60%;
-        left: -80%;
+        left: -84%;
       }
 
       &::after {
-        right: 82%;
+        right: 72%;
       }
     }
   }
@@ -377,6 +384,14 @@ img {
         right: -78%;
       }
     }
+  }
+
+  .fish {
+    @include w-h( 56vmin, 28vmin );
+    @include align-x-center();
+    outline: 1px solid yellow;
+    // background-color: yellow;
+    top: 40%;
   }
 }
 
@@ -704,81 +719,6 @@ img {
 //         border-radius: 40% 60% 30% 40% / 60% 80% 30% 40%;
 //         transform: rotate( -10deg );
 //       }
-//     }
-//   }
-// }
-
-// .arm {
-//   &__l,
-//   &__r {
-//     position: absolute;
-//     @include w-h( 50%, 15% );
-
-//     &::before {
-//       @include pseduo-div( 75%, 25%, null );
-//     }
-//   }
-
-//   &__l {
-//     top: 66%;
-//     left: 4%;
-//     transform: rotate( 46deg );
-//     transform-origin: 100% 0;
-
-//     &::before {
-//       top: 0%;
-//       left: -18%;
-//       transform: perspective( 20vmin ) rotateY( 135deg );
-//       transform-origin: 50% 0%;
-//       background:
-//         radial-gradient( 2% 3% at 84% 10%, $w 1vmin, $t 1.1vmin ),
-//         radial-gradient( 2% 3% at 83% 30%, $w 1vmin, $t 1.1vmin ),
-//         radial-gradient( 2% 3% at 82% 50%, $w 1vmin, $t 1.1vmin ),
-//         radial-gradient( 2% 3% at 81% 70%, $w 1vmin, $t 1.1vmin ),
-//         radial-gradient( 2% 3% at 80% 90%, $w 1vmin, $t 1.1vmin ),
-//         radial-gradient( circle at 0% 0%, $t 2vmin, $skin 2vmin, $skin 7.7vmin, $t 7.8vmin ),
-//         radial-gradient( circle at 0% 0%, $t 2vmin, $w 2vmin, $w 12.5vmin, $t 12.6vmin );
-//     }
-
-//     &::after {
-//       @include pseduo-div( 100%, 100%, yellow );
-//       background:
-//         radial-gradient( 1% 2% at 87% 6%, $w 2.6vmin, $t 2.7vmin ),
-//         radial-gradient( 1% 2% at 90% 5%, $w 2.2vmin, $t 2.3vmin ),
-//         radial-gradient( circle at 89% 16%, $w 2.2vmin, $t 2.3vmin ),
-//         radial-gradient( 5% 8% at 108% -50%, $n 15.5vmin, $t 15.6vmin );
-//     }
-//   }
-
-//   &__r {
-//     transform: rotate( 2deg );
-//     top: 65%;
-//     left: 53%;
-//     transform-origin: 0 0;
-//     animation: arm-move-right 1.3s infinite alternate ease-in-out;
-
-//     &::before {
-//       top: 14%;
-//       right: -14%;
-//       transform: perspective( 20vmin ) rotateY( 35deg );
-//       background:
-//         radial-gradient( 2% 3% at 86% 10%, $w 1vmin, $t 1.1vmin ),
-//         radial-gradient( 2% 3% at 85% 30%, $w 1vmin, $t 1.1vmin ),
-//         radial-gradient( 2% 3% at 84% 50%, $w 1vmin, $t 1.1vmin ),
-//         radial-gradient( 2% 3% at 83% 70%, $w 1vmin, $t 1.1vmin ),
-//         radial-gradient( 2% 3% at 82% 90%, $w 1vmin, $t 1.1vmin ),
-//         radial-gradient( circle at 0% 0%, $skin 8.2vmin, $t 8.3vmin ),
-//         radial-gradient( circle at 0% 0%, $w 12.5vmin, $t 12.6vmin );
-//     }
-
-//     &::after {
-//       @include pseduo-div( 75%, 100%, null );
-//       clip-path: polygon( 0 0, 10% 100%, 100% 15% );
-//       background:
-//         radial-gradient( 2.5% 3% at 15% 5%, $w 2.2vmin, $t 2.3vmin ),
-//         radial-gradient( 2.5% 3% at 17% 12%, $w 2.2vmin, $t 2.3vmin ),
-//         radial-gradient( 2.5% 3% at 18% 12%, $w 2.2vmin, $t 2.3vmin ),
-//         radial-gradient( 6% 5% at 0% 0%, $n 12.5vmin, $t 12.6vmin );
 //     }
 //   }
 // }
