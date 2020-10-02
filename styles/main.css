@@ -199,16 +199,16 @@ img {
 
 .bear__mid--arm-l::after, .bear__mid--arm-r::after {
   content: '';
-  width: 7vmin;
+  width: 8vmin;
   height: 5vmin;
   display: block;
   background-color: transparent;
   border-bottom: 0.6vmin solid #502141;
-  top: 0%;
+  top: 0;
 }
 
 .bear__mid--arm-l {
-  left: 4.2%;
+  left: 4.3%;
   border-radius: 6% 0% 0% 80% / 35% 0% 0% 70%;
   -webkit-transform: rotate(8deg);
           transform: rotate(8deg);
@@ -222,13 +222,13 @@ img {
 .bear__mid--arm-l::after {
   border-radius: 20% 50% 0% 100% / 100% 0% 0% 100%;
   border-left: 0.6vmin solid #502141;
-  -webkit-transform: rotate(-deg);
-          transform: rotate(-deg);
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg);
   right: -50%;
 }
 
 .bear__mid--arm-r {
-  right: 4.5%;
+  right: 4.3%;
   border-radius: 0% 5% 80% 0% / 0% 30% 70% 0%;
   -webkit-transform: rotate(-8deg);
           transform: rotate(-8deg);
@@ -246,7 +246,7 @@ img {
 }
 
 .bear__mid--arm-outline-l, .bear__mid--arm-outline-r {
-  width: 13.6vmin;
+  width: 13.4vmin;
   height: 14vmin;
   top: 13.5%;
   background-color: #502141;
@@ -280,15 +280,17 @@ img {
 
 .bear__mid--arm-outline-l::before {
   border-radius: 0% 40% 80% 0% / 0% 40% 60% 0%;
-  right: -84%;
+  right: -86%;
 }
 
 .bear__mid--arm-outline-l::after {
-  left: 71%;
+  left: 68%;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
 }
 
 .bear__mid--arm-outline-r {
-  right: 3.25%;
+  right: 3.1%;
   border-radius: 0% 3% 80% 0% / 0% 20% 75% 0%;
   -webkit-transform: rotate(-8deg);
           transform: rotate(-8deg);
@@ -296,11 +298,13 @@ img {
 
 .bear__mid--arm-outline-r::before {
   border-radius: 40% 0% 0% 80% / 40% 0% 0% 60%;
-  left: -84%;
+  left: -86%;
 }
 
 .bear__mid--arm-outline-r::after {
-  right: 72%;
+  right: 68%;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
 }
 
 .bear__btm {
@@ -420,7 +424,6 @@ img {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  outline: 1px solid yellow;
   top: 40%;
 }
 

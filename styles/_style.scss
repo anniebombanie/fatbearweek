@@ -202,14 +202,14 @@ img {
 
       // inner curve
       &::after {
-        @include pseduo-div( 7vmin, 5vmin );
+        @include pseduo-div( 8vmin, 5vmin );
         background-color: $t;
         border-bottom: 0.6vmin solid $p;
-        top: 0%;
+        top: 0;
       }
     }
     &--arm-l {
-      left: 4.2%;
+      left: 4.3%;
       border-radius: 6% 0% 0% 80% / 35% 0% 0% 70%;
       transform: rotate( 8deg );
 
@@ -221,20 +221,20 @@ img {
       &::after {
         border-radius: 20% 50% 0% 100% / 100% 0% 0% 100% ;
         border-left: 0.6vmin solid $p;
-        transform: rotate( -deg );
+        transform: rotate( -1deg );
         right: -50%;
       }
     }
     &--arm-r {
-      right: 4.5%;
+      right: 4.3%;
       border-radius: 0% 5% 80% 0% / 0% 30% 70% 0%;
       transform: rotate( -8deg );
-  
+
       &::before {
         border-radius: 40% 0% 0% 80% / 40% 0% 0% 60%;
         left: -83%;
       }
-  
+
       &::after {
         border-radius: 50% 20% 100% 0% / 0% 100% 100% 0% ;
         border-right: 0.6vmin solid $p;
@@ -244,7 +244,7 @@ img {
 
     &--arm-outline-l,
     &--arm-outline-r {
-      @include w-h( 13.6vmin, 14vmin );
+      @include w-h( 13.4vmin, 14vmin );
       top: 13.5%;
       background-color: $p;
 
@@ -268,25 +268,27 @@ img {
 
       &::before {
         border-radius: 0% 40% 80% 0% / 0% 40% 60% 0%;
-        right: -84%;
+        right: -86%;
       }
 
       &::after {
-        left: 71%;
+        left: 68%;
+        transform: rotate( 10deg );
       }
     }
     &--arm-outline-r {
-      right: 3.25%;
+      right: 3.1%;
       border-radius: 0% 3% 80% 0% / 0% 20% 75% 0%;
       transform: rotate( -8deg );
 
       &::before {
         border-radius: 40% 0% 0% 80% / 40% 0% 0% 60%;
-        left: -84%;
+        left: -86%;
       }
 
       &::after {
-        right: 72%;
+        right: 68%;
+        transform: rotate( -10deg );
       }
     }
   }
@@ -389,7 +391,7 @@ img {
   .fish {
     @include w-h( 56vmin, 28vmin );
     @include align-x-center();
-    outline: 1px solid yellow;
+    // outline: 1px solid yellow;
     // background-color: yellow;
     top: 40%;
   }
