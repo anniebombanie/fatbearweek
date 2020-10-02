@@ -68,7 +68,7 @@ img {
   // border: 1px dashed blue;
 
   &__top {
-    @include w-h( 59vmin, 69vmin );
+    @include w-h( 58.9vmin, 69vmin );
     @include align-x-center;
     background:
       linear-gradient( $p 40%, $t 40% );
@@ -85,14 +85,14 @@ img {
       top: 1%;
     }
 
-    // &::after {
-    //   @include pseduo-div( 23vmin, 1.4vmin );
-    //   @include align-x-center;
-    //   top: 4%;
-    //   background:
-    //     linear-gradient( 49deg, $t 0.5vmin, $b2 0.55vmin, $b2 1.8vmin, $t 1.9vmin ),
-    //     linear-gradient( -49deg, $t 0.5vmin, $b2 0.55vmin, $b2 1.8vmin, $t 1.9vmin );
-    // }
+    &::after {
+      @include pseduo-div( 23vmin, 1.4vmin );
+      @include align-x-center;
+      top: 4.2%;
+      background:
+        linear-gradient( 52deg, $t 0.4vmin, $b2 0.5vmin, $b2 2.1vmin, $t 2.2vmin ),
+        linear-gradient( -49deg, $t 0.4vmin, $b2 0.5vmin, $b2 2vmin, $t 2.1vmin );
+    }
 
     &--snout {
       @include pseduo-div( 8.5vmin, 9vmin );
@@ -220,7 +220,7 @@ img {
       }
     }
     &--arm-r {
-      right: 4.7%;
+      right: 4.5%;
       border-radius: 0% 5% 80% 0% / 0% 30% 70% 0%;
       transform: rotate( -8deg );
 

@@ -50,7 +50,7 @@ img {
 }
 
 .bear__top {
-  width: 59vmin;
+  width: 58.9vmin;
   height: 69vmin;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -73,6 +73,18 @@ img {
   background: radial-gradient(1% 0.2% at 50% 40.5%, #be7c5d 11vmin, transparent 12vmin), -webkit-gradient(linear, left top, left bottom, color-stop(40%, #be7c5d), color-stop(40%, transparent));
   background: radial-gradient(1% 0.2% at 50% 40.5%, #be7c5d 11vmin, transparent 12vmin), linear-gradient(#be7c5d 40%, transparent 40%);
   top: 1%;
+}
+
+.bear__top::after {
+  content: '';
+  width: 23vmin;
+  height: 1.4vmin;
+  display: block;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 4.2%;
+  background: linear-gradient(52deg, transparent 0.4vmin, #be7c5d 0.5vmin, #be7c5d 2.1vmin, transparent 2.2vmin), linear-gradient(-49deg, transparent 0.4vmin, #be7c5d 0.5vmin, #be7c5d 2vmin, transparent 2.1vmin);
 }
 
 .bear__top--snout {
@@ -207,7 +219,7 @@ img {
 }
 
 .bear__top--arm-r {
-  right: 4.7%;
+  right: 4.5%;
   border-radius: 0% 5% 80% 0% / 0% 30% 70% 0%;
   -webkit-transform: rotate(-8deg);
           transform: rotate(-8deg);
