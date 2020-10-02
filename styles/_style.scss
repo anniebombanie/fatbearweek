@@ -79,7 +79,7 @@ img {
       @include align-x-center;
       border-radius: 50% / 70% 70% 30% 30%;
       background:
-        radial-gradient( 1% 0.2% at 50% 40.5%, $b2 20vmin, $t 21vmin ),
+        radial-gradient( 1% 0.3% at 50% 40.5%, $b2 20vmin, $t 21vmin ),
         linear-gradient( $b2 40%, $t 40% );
       top: 1%;
     }
@@ -205,12 +205,12 @@ img {
         @include pseduo-div( 8vmin, 5vmin );
         background-color: $t;
         border-bottom: 0.6vmin solid $p;
-        top: 0;
+        top: 0.2%;
       }
     }
     &--arm-l {
       left: 4.3%;
-      border-radius: 6% 0% 0% 80% / 35% 0% 0% 70%;
+      border-radius: 6% 50% 0% 80% / 35% 50% 0% 70%;
       transform: rotate( 8deg );
 
       &::before {
@@ -227,7 +227,7 @@ img {
     }
     &--arm-r {
       right: 4.3%;
-      border-radius: 0% 5% 80% 0% / 0% 30% 70% 0%;
+      border-radius: 50% 5% 80% 0% / 50% 30% 70% 0%;
       transform: rotate( -8deg );
 
       &::before {
@@ -263,7 +263,7 @@ img {
     }
     &--arm-outline-l {
       left: 3%;
-      border-radius: 4% 0% 0% 88% / 30% 0% 0% 80%;
+      border-radius: 4% 50% 0% 88% / 30% 50% 0% 80%;
       transform: rotate( 8deg );
 
       &::before {
@@ -277,8 +277,8 @@ img {
       }
     }
     &--arm-outline-r {
-      right: 3.1%;
-      border-radius: 0% 3% 80% 0% / 0% 20% 75% 0%;
+      right: 3.16%;
+      border-radius: 50% 3% 80% 0% / 50% 20% 75% 0%;
       transform: rotate( -8deg );
 
       &::before {
@@ -389,11 +389,18 @@ img {
   }
 
   .fish {
-    @include w-h( 56vmin, 28vmin );
+    @include w-h( 36vmin, 10vmin );
     @include align-x-center();
-    // outline: 1px solid yellow;
-    // background-color: yellow;
-    top: 40%;
+    top: 45%;
+
+    &__top {
+      @include w-h( 36vmin, 10vmin );
+      // outline: 1px solid yellow;
+      border-radius: 50% 50% 0% 0% / 100% 100% 0% 0% ;
+      background: $pk;
+      left: -5%;
+      border-top: 0.7vmin solid $p;
+    }
   }
 }
 

@@ -70,8 +70,8 @@ img {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   border-radius: 50% / 70% 70% 30% 30%;
-  background: radial-gradient(1% 0.2% at 50% 40.5%, #be7c5d 20vmin, transparent 21vmin), -webkit-gradient(linear, left top, left bottom, color-stop(40%, #be7c5d), color-stop(40%, transparent));
-  background: radial-gradient(1% 0.2% at 50% 40.5%, #be7c5d 20vmin, transparent 21vmin), linear-gradient(#be7c5d 40%, transparent 40%);
+  background: radial-gradient(1% 0.3% at 50% 40.5%, #be7c5d 20vmin, transparent 21vmin), -webkit-gradient(linear, left top, left bottom, color-stop(40%, #be7c5d), color-stop(40%, transparent));
+  background: radial-gradient(1% 0.3% at 50% 40.5%, #be7c5d 20vmin, transparent 21vmin), linear-gradient(#be7c5d 40%, transparent 40%);
   top: 1%;
 }
 
@@ -204,12 +204,12 @@ img {
   display: block;
   background-color: transparent;
   border-bottom: 0.6vmin solid #502141;
-  top: 0;
+  top: 0.2%;
 }
 
 .bear__mid--arm-l {
   left: 4.3%;
-  border-radius: 6% 0% 0% 80% / 35% 0% 0% 70%;
+  border-radius: 6% 50% 0% 80% / 35% 50% 0% 70%;
   -webkit-transform: rotate(8deg);
           transform: rotate(8deg);
 }
@@ -229,7 +229,7 @@ img {
 
 .bear__mid--arm-r {
   right: 4.3%;
-  border-radius: 0% 5% 80% 0% / 0% 30% 70% 0%;
+  border-radius: 50% 5% 80% 0% / 50% 30% 70% 0%;
   -webkit-transform: rotate(-8deg);
           transform: rotate(-8deg);
 }
@@ -273,7 +273,7 @@ img {
 
 .bear__mid--arm-outline-l {
   left: 3%;
-  border-radius: 4% 0% 0% 88% / 30% 0% 0% 80%;
+  border-radius: 4% 50% 0% 88% / 30% 50% 0% 80%;
   -webkit-transform: rotate(8deg);
           transform: rotate(8deg);
 }
@@ -290,8 +290,8 @@ img {
 }
 
 .bear__mid--arm-outline-r {
-  right: 3.1%;
-  border-radius: 0% 3% 80% 0% / 0% 20% 75% 0%;
+  right: 3.16%;
+  border-radius: 50% 3% 80% 0% / 50% 20% 75% 0%;
   -webkit-transform: rotate(-8deg);
           transform: rotate(-8deg);
 }
@@ -419,12 +419,21 @@ img {
 }
 
 .bear .fish {
-  width: 56vmin;
-  height: 28vmin;
+  width: 36vmin;
+  height: 10vmin;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: 40%;
+  top: 45%;
+}
+
+.bear .fish__top {
+  width: 36vmin;
+  height: 10vmin;
+  border-radius: 50% 50% 0% 0% / 100% 100% 0% 0%;
+  background: #ff8d94;
+  left: -5%;
+  border-top: 0.7vmin solid #502141;
 }
 
 /* --- Animation --- */
