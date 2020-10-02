@@ -406,20 +406,34 @@ img {
     outline: 1px solid yellow;
 
     &__head {
-      @include w-h( 11vmin, 8vmin );
-      background: $pk;
-      border-radius: 100% 0% 0% 50% / 100% 0% 0% 40%;
+      @include w-h( 11vmin, 7.4vmin );
+      background: $g;
+      border-radius: 100% 0% 0% 40% / 100% 0% 0% 30%;
       transform: rotate( -40deg );
-      bottom: -80%;
-      left: -25%;
+      border-top: 0.6vmin solid $p;
+      border-left: 0.6vmin solid $p;
+      bottom: -70%;
+      left: -28%;
     }
 
     &__top {
-      @include w-h( 36vmin, 10vmin );
+      @include w-h( 40vmin, 10vmin );
       border-radius: 50% 50% 0% 0% / 100% 100% 0% 0% ;
-      background: $pk;
-      left: -5%;
+      background: $g;
+      left: -6%;
       border-top: 0.7vmin solid $p;
+    }
+
+    &__btm {
+      @include w-h( 20vmin, 12vmin );
+      // border-radius: 50% 50% 0% 0% / 100% 100% 0% 0% ;
+      background:
+        radial-gradient( 1% 0.6% at 50% 91.5%, $t 12vmin, $p 12.5vmin, $p 14vmin, $w2 14.2vmin, $w2 18.5vmin, $w2 26vmin, $t 26.5vmin );
+      transform: rotate( -2deg );
+      bottom: -76%;
+      left: 20%;
+      // border: 1px solid green;
+      // border-bottom: 0.7vmin solid $p;
     }
   }
 }

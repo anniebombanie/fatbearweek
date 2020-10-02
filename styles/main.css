@@ -443,22 +443,34 @@ img {
 
 .bear .fish__head {
   width: 11vmin;
-  height: 8vmin;
-  background: #ff8d94;
-  border-radius: 100% 0% 0% 50% / 100% 0% 0% 40%;
+  height: 7.4vmin;
+  background: #a3946e;
+  border-radius: 100% 0% 0% 40% / 100% 0% 0% 30%;
   -webkit-transform: rotate(-40deg);
           transform: rotate(-40deg);
-  bottom: -80%;
-  left: -25%;
+  border-top: 0.6vmin solid #502141;
+  border-left: 0.6vmin solid #502141;
+  bottom: -70%;
+  left: -28%;
 }
 
 .bear .fish__top {
-  width: 36vmin;
+  width: 40vmin;
   height: 10vmin;
   border-radius: 50% 50% 0% 0% / 100% 100% 0% 0%;
-  background: #ff8d94;
-  left: -5%;
+  background: #a3946e;
+  left: -6%;
   border-top: 0.7vmin solid #502141;
+}
+
+.bear .fish__btm {
+  width: 20vmin;
+  height: 12vmin;
+  background: radial-gradient(1% 0.6% at 50% 91.5%, transparent 12vmin, #502141 12.5vmin, #502141 14vmin, #d2c9c7 14.2vmin, #d2c9c7 18.5vmin, #d2c9c7 26vmin, transparent 26.5vmin);
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  bottom: -76%;
+  left: 20%;
 }
 
 /* --- Animation --- */
