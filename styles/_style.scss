@@ -187,6 +187,17 @@ img {
     @include align-x-center;
     top: 40%;
 
+    &::after {
+      @include pseduo-div( 30vmin, 2vmin );
+      @include align-x-center;
+      background:
+        radial-gradient( circle at 2.1% 97%, $p 0.2vmin, $t 0.25vmin ),
+        radial-gradient( circle at 98.3% 97%, $p 0.2vmin, $t 0.25vmin ),
+        linear-gradient( 90deg, $b2 5%, $t 5%, $t 95%, $b2 95% );
+      // border: 1px solid green;
+      top: 11%;
+    }
+
     &--arm-l,
     &--arm-r {
       @include w-h( 13vmin, 14vmin );
@@ -392,6 +403,10 @@ img {
     @include w-h( 36vmin, 10vmin );
     @include align-x-center();
     top: 45%;
+
+    &__head {
+      border-radius: 100% 25% 0% 48% / 100% 0% 0% 40%;
+    }
 
     &__top {
       @include w-h( 36vmin, 10vmin );

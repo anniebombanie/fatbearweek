@@ -181,6 +181,19 @@ img {
   top: 40%;
 }
 
+.bear__mid::after {
+  content: '';
+  width: 30vmin;
+  height: 2vmin;
+  display: block;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: radial-gradient(circle at 2.1% 97%, #502141 0.2vmin, transparent 0.25vmin), radial-gradient(circle at 98.3% 97%, #502141 0.2vmin, transparent 0.25vmin), -webkit-gradient(linear, left top, right top, color-stop(5%, #be7c5d), color-stop(5%, transparent), color-stop(95%, transparent), color-stop(95%, #be7c5d));
+  background: radial-gradient(circle at 2.1% 97%, #502141 0.2vmin, transparent 0.25vmin), radial-gradient(circle at 98.3% 97%, #502141 0.2vmin, transparent 0.25vmin), linear-gradient(90deg, #be7c5d 5%, transparent 5%, transparent 95%, #be7c5d 95%);
+  top: 11%;
+}
+
 .bear__mid--arm-l, .bear__mid--arm-r {
   width: 13vmin;
   height: 14vmin;
@@ -425,6 +438,10 @@ img {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   top: 45%;
+}
+
+.bear .fish__head {
+  border-radius: 100% 25% 0% 48% / 100% 0% 0% 40%;
 }
 
 .bear .fish__top {
