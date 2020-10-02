@@ -89,8 +89,8 @@ img {
       @include align-x-center;
       top: 4.2%;
       background:
-        linear-gradient( 52deg, $t 0.4vmin, $b2 0.5vmin, $b2 2.1vmin, $t 2.2vmin ),
-        linear-gradient( -49deg, $t 0.4vmin, $b2 0.5vmin, $b2 2vmin, $t 2.1vmin );
+        linear-gradient( 52deg, $t 0.4vmin, $b2 0.5vmin, $b2 2vmin, $t 2.1vmin ),
+        linear-gradient( -49deg, $t 0.4vmin, $b2 0.5vmin, $b2 2.1vmin, $t 2.2vmin );
     }
 
     &--snout {
@@ -403,14 +403,19 @@ img {
     @include w-h( 36vmin, 10vmin );
     @include align-x-center();
     top: 45%;
+    outline: 1px solid yellow;
 
     &__head {
-      border-radius: 100% 25% 0% 48% / 100% 0% 0% 40%;
+      @include w-h( 11vmin, 8vmin );
+      background: $pk;
+      border-radius: 100% 0% 0% 50% / 100% 0% 0% 40%;
+      transform: rotate( -40deg );
+      bottom: -80%;
+      left: -25%;
     }
 
     &__top {
       @include w-h( 36vmin, 10vmin );
-      // outline: 1px solid yellow;
       border-radius: 50% 50% 0% 0% / 100% 100% 0% 0% ;
       background: $pk;
       left: -5%;

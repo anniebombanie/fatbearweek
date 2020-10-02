@@ -84,7 +84,7 @@ img {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   top: 4.2%;
-  background: linear-gradient(52deg, transparent 0.4vmin, #be7c5d 0.5vmin, #be7c5d 2.1vmin, transparent 2.2vmin), linear-gradient(-49deg, transparent 0.4vmin, #be7c5d 0.5vmin, #be7c5d 2vmin, transparent 2.1vmin);
+  background: linear-gradient(52deg, transparent 0.4vmin, #be7c5d 0.5vmin, #be7c5d 2vmin, transparent 2.1vmin), linear-gradient(-49deg, transparent 0.4vmin, #be7c5d 0.5vmin, #be7c5d 2.1vmin, transparent 2.2vmin);
 }
 
 .bear__top--snout {
@@ -438,10 +438,18 @@ img {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   top: 45%;
+  outline: 1px solid yellow;
 }
 
 .bear .fish__head {
-  border-radius: 100% 25% 0% 48% / 100% 0% 0% 40%;
+  width: 11vmin;
+  height: 8vmin;
+  background: #ff8d94;
+  border-radius: 100% 0% 0% 50% / 100% 0% 0% 40%;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  bottom: -80%;
+  left: -25%;
 }
 
 .bear .fish__top {
