@@ -65,7 +65,6 @@ svg textPath {
   width: 55vmin;
   height: 64vmin;
   position: relative;
-  margin-top: -10%;
 }
 
 .bear--ear-l, .bear--ear-r {
@@ -486,11 +485,12 @@ svg textPath {
   height: 7.4vmin;
   display: block;
   background: #d2c9c7;
-  border-radius: 100% 0% 0% 100% / 100% 0% 0% 43%;
+  border-radius: 90% 0% 0% 100% / 100% 0% 0% 42%;
   -webkit-transform: rotate(15deg);
           transform: rotate(15deg);
-  border-bottom: 0.6vmin solid #502141;
-  border-top: 3vmin solid #a3946e;
+  border-top: 1vmin solid #a3946e;
+  -webkit-box-shadow: inset 0vmin -0.6vmin 0 0 #502141;
+          box-shadow: inset 0vmin -0.6vmin 0 0 #502141;
   bottom: -40%;
   left: 0%;
 }
@@ -507,12 +507,29 @@ svg textPath {
 }
 
 .bear .fish__top {
-  width: 40vmin;
-  height: 10vmin;
-  border-radius: 50% 50% 0% 0% / 100% 100% 0% 0%;
+  width: 10vmin;
+  height: 5vmin;
   background: #a3946e;
-  left: -6%;
-  border-top: 0.7vmin solid #502141;
+  border-radius: 100% 14% 49% 0% / 100% 24% 99% 35%;
+  -webkit-transform: rotate(-5deg) skew(-25deg);
+          transform: rotate(-5deg) skew(-25deg);
+  border: 0.6vmin solid #502141;
+  top: 0%;
+  left: 40%;
+}
+
+.bear .fish__top::before {
+  content: '';
+  width: 40vmin;
+  height: 6vmin;
+  display: block;
+  border-radius: 50% 50% 0% 0% / 100% 100% 0% 0%;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  background: #a3946e;
+  top: 70%;
+  left: -150%;
+  border: 0.5vmin solid #502141;
 }
 
 .bear .fish__btm {
@@ -528,16 +545,28 @@ svg textPath {
 .bear .fish__btm::before {
   content: '';
   width: 4.5vmin;
-  height: 5vmin;
+  height: 4vmin;
   display: block;
-  background: #d2c9c7;
-  -webkit-transform: rotate(-35deg);
-          transform: rotate(-35deg);
-  border-radius: 0% 100% 30% 70% / 22% 96% 21% 100%;
-  -webkit-box-shadow: 0.4vmin 0.5vmin 0 0 #502141, -0.4vmin 0.5vmin 0 0 #502141;
-          box-shadow: 0.4vmin 0.5vmin 0 0 #502141, -0.4vmin 0.5vmin 0 0 #502141;
-  bottom: 20%;
-  left: 10%;
+  background: #a3946e;
+  -webkit-transform: rotate(-25deg) skewY(30deg);
+          transform: rotate(-25deg) skewY(30deg);
+  border-radius: 0% 100% 30% 50% / 22% 100% 15% 100%;
+  -webkit-box-shadow: 0.5vmin 0.7vmin 0 0 #502141, 0.55vmin 0.5vmin 0 0 #502141, 0.55vmin 0.4vmin 0 0 #502141, 0.55vmin 0.3vmin 0 0 #502141, 0.4vmin -0.3vmin 0 0.1vmin #502141, -0.4vmin 0.6vmin 0 0 #502141;
+          box-shadow: 0.5vmin 0.7vmin 0 0 #502141, 0.55vmin 0.5vmin 0 0 #502141, 0.55vmin 0.4vmin 0 0 #502141, 0.55vmin 0.3vmin 0 0 #502141, 0.4vmin -0.3vmin 0 0.1vmin #502141, -0.4vmin 0.6vmin 0 0 #502141;
+  bottom: 15%;
+  left: -7%;
+}
+
+.bear .fish__tail {
+  width: 8vmin;
+  height: 4.5vmin;
+  border-radius: 0% 100% 100% 0% / 0% 100% 40% 100%;
+  background-color: #a3946e;
+  -webkit-transform: rotate(18deg);
+          transform: rotate(18deg);
+  border: 0.6vmin solid #502141;
+  bottom: -60%;
+  right: -10%;
 }
 
 .bear .shadow {

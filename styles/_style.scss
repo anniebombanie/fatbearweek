@@ -82,7 +82,7 @@ svg {
 .bear {
   @include w-h( 55vmin, 64vmin );
   position: relative;
-  margin-top: -10%;
+  // margin-top: -10%;
 
   &--ear-l,
   &--ear-r {
@@ -440,11 +440,11 @@ svg {
       &::before {
         @include pseduo-div( 14vmin, 7.4vmin );
         background: $w2;
-        border-radius: 100% 0% 0% 100% / 100% 0% 0% 43%;
+        border-radius: 90% 0% 0% 100% / 100% 0% 0% 42%;
         transform: rotate( 15deg );
-        border-bottom: 0.6vmin solid $p;
-        border-top: 3vmin solid $g;
-        // border-left: 1vmin solid $pk;
+        // border-bottom: 0.6vmin solid $p;
+        border-top: 1vmin solid $g;
+        box-shadow: inset 0vmin -0.6vmin 0 0 $p;
         bottom: -40%;
         left: 0%;
       }
@@ -468,11 +468,23 @@ svg {
     }
 
     &__top {
-      @include w-h( 40vmin, 10vmin );
-      border-radius: 50% 50% 0% 0% / 100% 100% 0% 0% ;
+      @include w-h( 10vmin, 5vmin );
       background: $g;
-      left: -6%;
-      border-top: 0.7vmin solid $p;
+      border-radius: 100% 14% 49% 0% / 100% 24% 99% 35% ;
+      transform: rotate( -5deg ) skew( -25deg );
+      border: 0.6vmin solid $p;
+      top: 0%;
+      left: 40%;
+
+      &::before {
+        @include pseduo-div( 40vmin, 6vmin );
+        border-radius: 50% 50% 0% 0% / 100% 100% 0% 0%;
+        transform: rotate( 15deg );
+        background: $g;
+        top: 70%;
+        left: -150%;
+        border: 0.5vmin solid $p;
+      }
     }
 
     &__btm {
@@ -485,17 +497,32 @@ svg {
       // border: 1px solid green;
       // border-bottom: 0.7vmin solid $p;
 
+      // bottom fin
       &::before {
-        @include pseduo-div( 4.5vmin, 5vmin );
-        background: $w2;
-        transform: rotate( -35deg );
-        border-radius: 0% 100% 30% 70% / 22% 96% 21% 100%;
+        @include pseduo-div( 4.5vmin, 4vmin );
+        background: $g;
+        transform: rotate( -25deg ) skewY( 30deg );
+        border-radius: 0% 100% 30% 50% / 22% 100% 15% 100%;
         box-shadow:
-          0.4vmin 0.5vmin 0 0 $p,
-          -0.4vmin 0.5vmin 0 0 $p;
-        bottom: 20%;
-        left: 10%;
+          0.5vmin 0.7vmin 0 0 $p,
+          0.55vmin 0.5vmin 0 0 $p,
+          0.55vmin 0.4vmin 0 0 $p,
+          0.55vmin 0.3vmin 0 0 $p,
+          0.4vmin -0.3vmin 0 0.1vmin $p,
+          -0.4vmin 0.6vmin 0 0 $p;
+        bottom: 15%;
+        left: -7%;
       }
+    }
+
+    &__tail {
+      @include w-h( 8vmin, 4.5vmin );
+      border-radius: 0% 100% 100% 0% / 0% 100% 40% 100%;
+      background-color: $g;
+      transform: rotate( 18deg );
+      border: 0.6vmin solid $p;
+      bottom: -60%;
+      right: -10%;
     }
   }
 
