@@ -189,8 +189,8 @@ img {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background: radial-gradient(circle at 2.1% 97%, #502141 0.2vmin, transparent 0.25vmin), radial-gradient(circle at 98.3% 97%, #502141 0.2vmin, transparent 0.25vmin), -webkit-gradient(linear, left top, right top, color-stop(5%, #be7c5d), color-stop(5%, transparent), color-stop(95%, transparent), color-stop(95%, #be7c5d));
-  background: radial-gradient(circle at 2.1% 97%, #502141 0.2vmin, transparent 0.25vmin), radial-gradient(circle at 98.3% 97%, #502141 0.2vmin, transparent 0.25vmin), linear-gradient(90deg, #be7c5d 5%, transparent 5%, transparent 95%, #be7c5d 95%);
+  background: radial-gradient(circle at 2% 99%, #502141 0.25vmin, transparent 0.3vmin), radial-gradient(circle at 98.2% 99%, #502141 0.25vmin, transparent 0.3vmin), -webkit-gradient(linear, left top, right top, color-stop(5%, #be7c5d), color-stop(5%, transparent), color-stop(95%, transparent), color-stop(95%, #be7c5d));
+  background: radial-gradient(circle at 2% 99%, #502141 0.25vmin, transparent 0.3vmin), radial-gradient(circle at 98.2% 99%, #502141 0.25vmin, transparent 0.3vmin), linear-gradient(90deg, #be7c5d 5%, transparent 5%, transparent 95%, #be7c5d 95%);
   top: 11%;
 }
 
@@ -216,7 +216,7 @@ img {
   height: 5vmin;
   display: block;
   background-color: transparent;
-  border-bottom: 0.6vmin solid #502141;
+  border-bottom: 0.5vmin solid #502141;
   top: 0.2%;
 }
 
@@ -321,7 +321,7 @@ img {
 }
 
 .bear__btm {
-  width: 40vmin;
+  width: 40.2vmin;
   height: 20vmin;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -329,6 +329,8 @@ img {
   bottom: 9%;
   border-radius: 0% 0% 80% 80% / 0% 0% 100% 100%;
   background-color: #84424d;
+  border-left: 0.7vmin solid #502141;
+  border-right: 0.7vmin solid #502141;
   border-bottom: 0.7vmin solid #502141;
 }
 
@@ -359,7 +361,7 @@ img {
 
 .bear__btm--leg-l {
   border-radius: 0% 0% 40% 80% / 0% 100% 50% 50%;
-  left: 23%;
+  left: 22.9%;
 }
 
 .bear__btm--leg-l::before {
@@ -376,7 +378,7 @@ img {
 
 .bear__btm--leg-r {
   border-radius: 0% 0% 80% 40% / 100% 0% 50% 50%;
-  right: 23%;
+  right: 22.7%;
 }
 
 .bear__btm--leg-r::before {
@@ -413,10 +415,10 @@ img {
 }
 
 .bear__btm--leg-outline-l::before {
-  border-radius: 0% 0% 0% 70% / 0% 100% 0% 100%;
+  border-radius: 5% 0% 0% 70% / 0% 100% 0% 100%;
   -webkit-transform: rotate(-19deg);
           transform: rotate(-19deg);
-  left: -78%;
+  left: -77%;
 }
 
 .bear__btm--leg-outline-r {
@@ -428,7 +430,7 @@ img {
   border-radius: 0% 0% 70% 0% / 100% 0% 100% 0%;
   -webkit-transform: rotate(19deg);
           transform: rotate(19deg);
-  right: -78%;
+  right: -77%;
 }
 
 .bear .fish {
@@ -438,7 +440,6 @@ img {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   top: 45%;
-  outline: 1px solid yellow;
 }
 
 .bear .fish__head {
@@ -454,6 +455,32 @@ img {
   left: -28%;
 }
 
+.bear .fish__head::before {
+  content: '';
+  width: 14vmin;
+  height: 7.4vmin;
+  display: block;
+  background: #d2c9c7;
+  border-radius: 100% 0% 0% 100% / 100% 0% 0% 43%;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  border-bottom: 0.6vmin solid #502141;
+  border-top: 3vmin solid #a3946e;
+  bottom: -40%;
+  left: 0%;
+}
+
+.bear .fish__head--eye {
+  width: 2vmin;
+  height: 1vmin;
+  background: #502141;
+  border-radius: 70% 25% 25% 30% / 70% 50% 50% 30%;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  top: 40%;
+  left: 25%;
+}
+
 .bear .fish__top {
   width: 40vmin;
   height: 10vmin;
@@ -467,9 +494,9 @@ img {
   width: 20vmin;
   height: 12vmin;
   background: radial-gradient(1% 0.6% at 50% 91.5%, transparent 12vmin, #502141 12.5vmin, #502141 14vmin, #d2c9c7 14.2vmin, #d2c9c7 18.5vmin, #d2c9c7 26vmin, transparent 26.5vmin);
-  -webkit-transform: rotate(-2deg);
-          transform: rotate(-2deg);
-  bottom: -76%;
+  -webkit-transform: rotate(-0.5deg);
+          transform: rotate(-0.5deg);
+  bottom: -81%;
   left: 20%;
 }
 
