@@ -201,6 +201,7 @@ img {
     &--arm-l,
     &--arm-r {
       @include w-h( 13vmin, 14vmin );
+      box-shadow: inset  0 -3vmin 0 $b3;
       top: 10%;
       background-color: $b2;
 
@@ -226,7 +227,8 @@ img {
 
       &::before {
         border-radius: 0% 40% 80% 0% / 0% 40% 60% 0%;
-        right: -83%;
+        box-shadow: inset  1.5vmin -5vmin 0 -2vmin $b3;
+        right: -82%;
       }
 
       &::after {
@@ -243,7 +245,8 @@ img {
 
       &::before {
         border-radius: 40% 0% 0% 80% / 40% 0% 0% 60%;
-        left: -83%;
+        box-shadow: inset  -1.5vmin -5vmin 0 -2vmin $b3;
+        left: -82%;
       }
 
       &::after {

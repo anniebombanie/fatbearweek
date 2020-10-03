@@ -197,6 +197,8 @@ img {
 .bear__mid--arm-l, .bear__mid--arm-r {
   width: 13vmin;
   height: 14vmin;
+  -webkit-box-shadow: inset 0 -3vmin 0 #84424d;
+          box-shadow: inset 0 -3vmin 0 #84424d;
   top: 10%;
   background-color: #be7c5d;
 }
@@ -229,7 +231,9 @@ img {
 
 .bear__mid--arm-l::before {
   border-radius: 0% 40% 80% 0% / 0% 40% 60% 0%;
-  right: -83%;
+  -webkit-box-shadow: inset 1.5vmin -5vmin 0 -2vmin #84424d;
+          box-shadow: inset 1.5vmin -5vmin 0 -2vmin #84424d;
+  right: -82%;
 }
 
 .bear__mid--arm-l::after {
@@ -249,7 +253,9 @@ img {
 
 .bear__mid--arm-r::before {
   border-radius: 40% 0% 0% 80% / 40% 0% 0% 60%;
-  left: -83%;
+  -webkit-box-shadow: inset -1.5vmin -5vmin 0 -2vmin #84424d;
+          box-shadow: inset -1.5vmin -5vmin 0 -2vmin #84424d;
+  left: -82%;
 }
 
 .bear__mid--arm-r::after {
