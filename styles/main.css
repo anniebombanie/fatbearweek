@@ -68,7 +68,49 @@ svg textPath {
   margin-top: -10%;
 }
 
-.bear__top {
+.bear--ear-l, .bear--ear-r {
+  width: 9vmin;
+  height: 7vmin;
+  border-radius: 50% 50% 0% 0% / 70% 70% 0% 0%;
+  background-color: #be7c5d;
+  border: 0.7vmin solid #502141;
+  top: 2%;
+  overflow: hidden;
+}
+
+.bear--ear-l::before, .bear--ear-r::before {
+  content: '';
+  width: 7vmin;
+  height: 7vmin;
+  display: block;
+  border: 0.5vmin solid #502141;
+  background-color: #ff8d94;
+  top: -5%;
+}
+
+.bear--ear-l {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: 16%;
+}
+
+.bear--ear-l::before {
+  border-radius: 60% 50% 10% 10% / 70% 70% 20% 10%;
+  left: -12%;
+}
+
+.bear--ear-r {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: 16%;
+}
+
+.bear--ear-r::before {
+  border-radius: 50% 60% 10% 10% / 70% 70% 10% 20%;
+  right: -12%;
+}
+
+.bear__head {
   width: 58.9vmin;
   height: 69vmin;
   left: 50%;
@@ -80,7 +122,7 @@ svg textPath {
   top: 1%;
 }
 
-.bear__top::before {
+.bear__head::before {
   content: '';
   width: 57.6vmin;
   height: 68vmin;
@@ -94,7 +136,7 @@ svg textPath {
   top: 1%;
 }
 
-.bear__top::after {
+.bear__head::after {
   content: '';
   width: 23vmin;
   height: 1.4vmin;
@@ -106,7 +148,7 @@ svg textPath {
   background: linear-gradient(52deg, transparent 0.4vmin, #be7c5d 0.5vmin, #be7c5d 2vmin, transparent 2.1vmin), linear-gradient(-49deg, transparent 0.4vmin, #be7c5d 0.5vmin, #be7c5d 2.1vmin, transparent 2.2vmin);
 }
 
-.bear__top--snout {
+.bear__head--snout {
   content: '';
   width: 8.5vmin;
   height: 9vmin;
@@ -119,7 +161,7 @@ svg textPath {
   top: 23%;
 }
 
-.bear__top--snout:after {
+.bear__head--snout:after {
   content: '';
   width: 3.5vmin;
   height: 2.2vmin;
@@ -132,63 +174,21 @@ svg textPath {
   top: 32%;
 }
 
-.bear__top--eye-l, .bear__top--eye-r {
+.bear__head--eye-l, .bear__head--eye-r {
   width: 2vmin;
   height: 2vmin;
   border-radius: 50%;
   top: 23%;
 }
 
-.bear__top--eye-l {
+.bear__head--eye-l {
   left: 37%;
   background: radial-gradient(circle at 60% 45%, #f7e5dc 0.2vmin, transparent 0.3vmin), #502141;
 }
 
-.bear__top--eye-r {
+.bear__head--eye-r {
   right: 37%;
   background: radial-gradient(circle at 40% 45%, #f7e5dc 0.2vmin, transparent 0.3vmin), #502141;
-}
-
-.bear__top--ear-l, .bear__top--ear-r {
-  width: 9vmin;
-  height: 7vmin;
-  border-radius: 50% 50% 0% 0% / 70% 70% 0% 0%;
-  background-color: #be7c5d;
-  border: 0.7vmin solid #502141;
-  top: 2%;
-  overflow: hidden;
-}
-
-.bear__top--ear-l::before, .bear__top--ear-r::before {
-  content: '';
-  width: 7vmin;
-  height: 7vmin;
-  display: block;
-  border: 0.5vmin solid #502141;
-  background-color: #ff8d94;
-  top: -5%;
-}
-
-.bear__top--ear-l {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  left: 16%;
-}
-
-.bear__top--ear-l::before {
-  border-radius: 60% 50% 10% 10% / 70% 70% 20% 10%;
-  left: -12%;
-}
-
-.bear__top--ear-r {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  right: 16%;
-}
-
-.bear__top--ear-r::before {
-  border-radius: 50% 60% 10% 10% / 70% 70% 10% 20%;
-  right: -12%;
 }
 
 .bear__mid {

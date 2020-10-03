@@ -84,7 +84,42 @@ svg {
   position: relative;
   margin-top: -10%;
 
-  &__top {
+  &--ear-l,
+  &--ear-r {
+    @include w-h( 9vmin, 7vmin );
+    border-radius: 50% 50% 0% 0% / 70% 70% 0% 0%;
+    background-color: $b2;
+    border: 0.7vmin solid $p;
+    top: 2%;
+    overflow: hidden;
+
+    &::before {
+      @include pseduo-div( 7vmin, 7vmin );
+      border: 0.5vmin solid $p;
+      background-color: $pk;
+      top: -5%;
+    }
+  }
+  &--ear-l {
+    transform: rotate( -45deg );
+    left: 16%;
+
+    &::before {
+      border-radius: 60% 50% 10% 10% / 70% 70% 20% 10%;
+      left: -12%;
+    }
+  }
+  &--ear-r {
+    transform: rotate( 45deg );
+    right: 16%;
+
+    &::before {
+      border-radius: 50% 60% 10% 10% / 70% 70% 10% 20%;
+      right: -12%;
+    }
+  }
+
+  &__head {
     @include w-h( 58.9vmin, 69vmin );
     @include align-x-center;
     background:
@@ -162,41 +197,6 @@ svg {
     &--eye-r {
       right: 37%;
       background: radial-gradient( circle at 40% 45%, $w1 0.2vmin, $t 0.3vmin ), $p;
-    }
-
-    &--ear-l,
-    &--ear-r {
-      @include w-h( 9vmin, 7vmin );
-      border-radius: 50% 50% 0% 0% / 70% 70% 0% 0%;
-      background-color: $b2;
-      border: 0.7vmin solid $p;
-      top: 2%;
-      overflow: hidden;
-
-      &::before {
-        @include pseduo-div( 7vmin, 7vmin );
-        border: 0.5vmin solid $p;
-        background-color: $pk;
-        top: -5%;
-      }
-    }
-    &--ear-l {
-      transform: rotate( -45deg );
-      left: 16%;
-
-      &::before {
-        border-radius: 60% 50% 10% 10% / 70% 70% 20% 10%;
-        left: -12%;
-      }
-    }
-    &--ear-r {
-      transform: rotate( 45deg );
-      right: 16%;
-
-      &::before {
-        border-radius: 50% 60% 10% 10% / 70% 70% 10% 20%;
-        right: -12%;
-      }
     }
   }
 
