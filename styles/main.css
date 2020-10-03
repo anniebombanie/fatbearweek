@@ -506,6 +506,21 @@ img {
   left: 20%;
 }
 
+.bear .fish__btm::before {
+  content: '';
+  width: 4.5vmin;
+  height: 5vmin;
+  display: block;
+  background: #d2c9c7;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+  border-radius: 0% 100% 30% 70% / 22% 96% 21% 100%;
+  -webkit-box-shadow: 0.4vmin 0.5vmin 0 0 #502141, -0.4vmin 0.5vmin 0 0 #502141;
+          box-shadow: 0.4vmin 0.5vmin 0 0 #502141, -0.4vmin 0.5vmin 0 0 #502141;
+  bottom: 20%;
+  left: 10%;
+}
+
 /* --- Animation --- */
 @-webkit-keyframes eyes-blink {
   0% {

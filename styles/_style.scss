@@ -19,6 +19,7 @@ $b2: #be7c5d;
 $b3: #84424d;
 $pk: #ff8d94;
 $g: #a3946e;
+$g2: #a78472;
 $w1: #f7e5dc;
 $w2: #d2c9c7;
 $p: #502141;
@@ -466,6 +467,18 @@ img {
       left: 20%;
       // border: 1px solid green;
       // border-bottom: 0.7vmin solid $p;
+
+      &::before {
+        @include pseduo-div( 4.5vmin, 5vmin );
+        background: $w2;
+        transform: rotate( -35deg );
+        border-radius: 0% 100% 30% 70% / 22% 96% 21% 100%;
+        box-shadow:
+          0.4vmin 0.5vmin 0 0 $p,
+          -0.4vmin 0.5vmin 0 0 $p;
+        bottom: 20%;
+        left: 10%;
+      }
     }
   }
 }
