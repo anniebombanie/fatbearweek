@@ -540,6 +540,18 @@ svg textPath {
   left: 10%;
 }
 
+.bear .shadow {
+  width: 45vmin;
+  height: 6vmin;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #a78472;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -4%;
+}
+
 /* --- Animation --- */
 @-webkit-keyframes eyes-blink {
   0% {

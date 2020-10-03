@@ -498,6 +498,15 @@ svg {
       }
     }
   }
+
+  .shadow {
+    @include w-h( 45vmin, 6vmin );
+    @include align-x-center();
+    background: $g2;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -4%;
+  }
 }
 
 // .cloud {
