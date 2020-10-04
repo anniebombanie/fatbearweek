@@ -222,8 +222,9 @@ svg textPath {
   height: 14vmin;
   -webkit-box-shadow: inset 0 -3vmin 0 #84424d;
           box-shadow: inset 0 -3vmin 0 #84424d;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #be7c5d), color-stop(80%, #84424d));
+  background: linear-gradient(#be7c5d 80%, #84424d 80%);
   top: 10%;
-  background-color: #be7c5d;
 }
 
 .bear__mid--arm-l::before, .bear__mid--arm-r::before {
@@ -489,7 +490,7 @@ svg textPath {
   width: 14vmin;
   height: 7.4vmin;
   display: block;
-  background: #d2c9c7;
+  background: linear-gradient(10deg, #502141 20%, #d2c9c7 20%);
   border-radius: 90% 0% 0% 100% / 100% 0% 0% 42%;
   -webkit-transform: rotate(15deg);
           transform: rotate(15deg);
@@ -500,8 +501,8 @@ svg textPath {
 }
 
 .bear .fish__head--eye {
-  width: 2vmin;
-  height: 1vmin;
+  width: 2.2vmin;
+  height: 1.1vmin;
   background: #502141;
   border-radius: 70% 25% 25% 30% / 70% 50% 50% 30%;
   -webkit-transform: rotate(-5deg);
