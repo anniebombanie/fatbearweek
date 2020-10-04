@@ -428,10 +428,17 @@ svg {
       @include w-h( 37vmin, 20vmin );
       @include align-x-center;
       background:
-        linear-gradient( $b3 94%, $t 94% ),
         radial-gradient( ellipse at 50% 50%, $b3 66%, $p 66.6% );
       border-radius: 50%;
-      clip
+      clip-path: ellipse( 20% 20% at 50% 105% );
+
+      &::before {
+        @include pseduo-div( 30vmin, 20vmin );
+        background:
+          radial-gradient( circle at 42% 95.7%,$p 0.3vmin, $t 0.35vmin ),
+          radial-gradient( circle at 82% 95.7%,$p 0.3vmin, $t 0.35vmin ),
+          linear-gradient( 90deg, $b3 42%, $t 42%, $t 82%, $b3 82% );
+      }
     }
   }
 
@@ -533,6 +540,13 @@ svg {
       border: 0.6vmin solid $p;
       bottom: -60%;
       right: -10%;
+
+      &::before {
+        @include pseduo-div( 4vmin, 4vmin );
+        border-radius: 100% 14% 49% 0% / 100% 24% 99% 35% ;
+        transform: rotate( -5deg ) skew( -25deg );
+        border: 0.6vmin solid $p;
+      }
     }
   }
 

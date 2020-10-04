@@ -472,9 +472,19 @@ svg textPath {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(94%, #84424d), color-stop(94%, transparent)), radial-gradient(ellipse at 50% 50%, #84424d 66%, #502141 66.6%);
-  background: linear-gradient(#84424d 94%, transparent 94%), radial-gradient(ellipse at 50% 50%, #84424d 66%, #502141 66.6%);
+  background: radial-gradient(ellipse at 50% 50%, #84424d 66%, #502141 66.6%);
   border-radius: 50%;
+  -webkit-clip-path: ellipse(20% 20% at 50% 105%);
+          clip-path: ellipse(20% 20% at 50% 105%);
+}
+
+.bear__btm--curve::before {
+  content: '';
+  width: 30vmin;
+  height: 20vmin;
+  display: block;
+  background: radial-gradient(circle at 42% 95.7%, #502141 0.3vmin, transparent 0.35vmin), radial-gradient(circle at 82% 95.7%, #502141 0.3vmin, transparent 0.35vmin), -webkit-gradient(linear, left top, right top, color-stop(42%, #84424d), color-stop(42%, transparent), color-stop(82%, transparent), color-stop(82%, #84424d));
+  background: radial-gradient(circle at 42% 95.7%, #502141 0.3vmin, transparent 0.35vmin), radial-gradient(circle at 82% 95.7%, #502141 0.3vmin, transparent 0.35vmin), linear-gradient(90deg, #84424d 42%, transparent 42%, transparent 82%, #84424d 82%);
 }
 
 .bear .fish {
@@ -584,6 +594,17 @@ svg textPath {
   border: 0.6vmin solid #502141;
   bottom: -60%;
   right: -10%;
+}
+
+.bear .fish__tail::before {
+  content: '';
+  width: 4vmin;
+  height: 4vmin;
+  display: block;
+  border-radius: 100% 14% 49% 0% / 100% 24% 99% 35%;
+  -webkit-transform: rotate(-5deg) skew(-25deg);
+          transform: rotate(-5deg) skew(-25deg);
+  border: 0.6vmin solid #502141;
 }
 
 .bear .shadow {
