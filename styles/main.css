@@ -180,6 +180,7 @@ svg textPath {
 .bear__head--eye-l, .bear__head--eye-r {
   width: 2vmin;
   height: 2vmin;
+  border-bottom: 0.2vmin solid #dd9b70;
   border-radius: 50%;
   top: 23%;
 }
@@ -230,7 +231,6 @@ svg textPath {
   width: 11vmin;
   height: 9vmin;
   display: block;
-  background-color: #be7c5d;
   bottom: 0%;
 }
 
@@ -241,7 +241,6 @@ svg textPath {
   display: block;
   background-color: transparent;
   border-bottom: 0.5vmin solid #502141;
-  top: 0.2%;
 }
 
 .bear__mid--arm-l {
@@ -253,6 +252,7 @@ svg textPath {
 
 .bear__mid--arm-l::before {
   border-radius: 0% 40% 80% 0% / 0% 40% 60% 0%;
+  background: linear-gradient(-5deg, #84424d 36%, #be7c5d 37%);
   -webkit-box-shadow: inset 1.5vmin -5vmin 0 -2vmin #84424d;
           box-shadow: inset 1.5vmin -5vmin 0 -2vmin #84424d;
   right: -82%;
@@ -275,6 +275,7 @@ svg textPath {
 
 .bear__mid--arm-r::before {
   border-radius: 40% 0% 0% 80% / 40% 0% 0% 60%;
+  background: linear-gradient(5deg, #84424d 36%, #be7c5d 37%);
   -webkit-box-shadow: inset -1.5vmin -5vmin 0 -2vmin #84424d;
           box-shadow: inset -1.5vmin -5vmin 0 -2vmin #84424d;
   left: -82%;
