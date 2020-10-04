@@ -212,8 +212,8 @@ svg textPath {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background: radial-gradient(circle at 2% 99%, #502141 0.25vmin, transparent 0.3vmin), radial-gradient(circle at 98.2% 99%, #502141 0.25vmin, transparent 0.3vmin), -webkit-gradient(linear, left top, right top, color-stop(5%, #be7c5d), color-stop(5%, transparent), color-stop(95%, transparent), color-stop(95%, #be7c5d));
-  background: radial-gradient(circle at 2% 99%, #502141 0.25vmin, transparent 0.3vmin), radial-gradient(circle at 98.2% 99%, #502141 0.25vmin, transparent 0.3vmin), linear-gradient(90deg, #be7c5d 5%, transparent 5%, transparent 95%, #be7c5d 95%);
+  background: radial-gradient(circle at 2% 100%, #502141 0.2vmin, transparent 0.3vmin), radial-gradient(circle at 98.2% 100%, #502141 0.2vmin, transparent 0.3vmin), -webkit-gradient(linear, left top, right top, color-stop(5%, #be7c5d), color-stop(5%, transparent), color-stop(95%, transparent), color-stop(95%, #be7c5d));
+  background: radial-gradient(circle at 2% 100%, #502141 0.2vmin, transparent 0.3vmin), radial-gradient(circle at 98.2% 100%, #502141 0.2vmin, transparent 0.3vmin), linear-gradient(90deg, #be7c5d 5%, transparent 5%, transparent 95%, #be7c5d 95%);
   top: 11%;
 }
 
@@ -464,6 +464,17 @@ svg textPath {
   -webkit-transform: rotate(19deg);
           transform: rotate(19deg);
   right: -77%;
+}
+
+.bear__btm--curve {
+  width: 37vmin;
+  height: 20vmin;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(94%, #84424d), color-stop(94%, transparent)), radial-gradient(ellipse at 50% 50%, #84424d 66%, #502141 66.6%);
+  background: linear-gradient(#84424d 94%, transparent 94%), radial-gradient(ellipse at 50% 50%, #84424d 66%, #502141 66.6%);
+  border-radius: 50%;
 }
 
 .bear .fish {

@@ -214,8 +214,8 @@ svg {
       @include pseduo-div( 30vmin, 2vmin );
       @include align-x-center;
       background:
-        radial-gradient( circle at 2% 99%, $p 0.25vmin, $t 0.3vmin ),
-        radial-gradient( circle at 98.2% 99%, $p 0.25vmin, $t 0.3vmin ),
+        radial-gradient( circle at 2% 100%, $p 0.2vmin, $t 0.3vmin ),
+        radial-gradient( circle at 98.2% 100%, $p 0.2vmin, $t 0.3vmin ),
         linear-gradient( 90deg, $b2 5%, $t 5%, $t 95%, $b2 95% );
       // border: 1px solid green;
       top: 11%;
@@ -360,7 +360,6 @@ svg {
         bottom: 72.5%;
       }
     }
-
     &--leg-l {
       border-radius: 0% 0% 40% 80% / 0% 100% 50% 50%;
       left: 22.9%;
@@ -376,7 +375,6 @@ svg {
         left: 1%;
       }
     }
-
     &--leg-r {
       border-radius: 0% 0% 80% 40% / 100% 0% 50% 50%;
       right: 22.7%;
@@ -405,7 +403,6 @@ svg {
         bottom: -10%;
       }
     }
-
     &--leg-outline-l {
       border-radius: 0% 0% 50% 80% / 0% 100% 75% 50%;
       left: 24.5%;
@@ -416,7 +413,6 @@ svg {
         left: -77%;
       }
     }
-
     &--leg-outline-r {
       border-radius: 0% 0% 80% 50% / 100% 0% 50% 75%;
       right: 24.5%;
@@ -426,6 +422,16 @@ svg {
         transform: rotate( 19deg );
         right: -77%;
       }
+    }
+
+    &--curve {
+      @include w-h( 37vmin, 20vmin );
+      @include align-x-center;
+      background:
+        linear-gradient( $b3 94%, $t 94% ),
+        radial-gradient( ellipse at 50% 50%, $b3 66%, $p 66.6% );
+      border-radius: 50%;
+      clip
     }
   }
 
@@ -500,8 +506,6 @@ svg {
       transform: rotate( -0.5deg );
       bottom: -81%;
       left: 20%;
-      // border: 1px solid green;
-      // border-bottom: 0.7vmin solid $p;
 
       // bottom fin
       &::before {
