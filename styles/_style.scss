@@ -88,7 +88,7 @@ svg {
   &--ear-r {
     @include w-h( 9vmin, 7vmin );
     border-radius: 50% 50% 0% 0% / 70% 70% 0% 0%;
-    background-color: $b2;
+    background-color: $b1;
     border: 0.7vmin solid $p;
     top: 2%;
     overflow: hidden;
@@ -130,11 +130,15 @@ svg {
     &::before {
       @include pseduo-div( 57.6vmin, 68vmin );
       @include align-x-center;
+      box-shadow:
+        inset 0.5vmin 2vmin 0 -1vmin $b1,
+        inset -0.5vmin 2vmin 0 -1vmin $b1;
       border-radius: 50% / 70% 70% 30% 30%;
       background:
         radial-gradient( 1% 0.3% at 50% 40.5%, $b2 20vmin, $t 21vmin ),
         linear-gradient( $b2 40%, $t 40% );
       top: 1%;
+      clip-path: circle(50% at 50% 22%);
     }
 
     &::after {
@@ -142,8 +146,8 @@ svg {
       @include align-x-center;
       top: 4.2%;
       background:
-        linear-gradient( 52deg, $t 0.4vmin, $b2 0.5vmin, $b2 2vmin, $t 2.1vmin ),
-        linear-gradient( -49deg, $t 0.4vmin, $b2 0.5vmin, $b2 2.1vmin, $t 2.2vmin );
+        linear-gradient( 55deg, $t 0.4vmin, $b1 0.5vmin, $b1 2vmin, $t 2.1vmin ),
+        linear-gradient( -55deg, $t 0.4vmin, $b1 0.5vmin, $b1 2vmin, $t 2.1vmin );
     }
 
     &--snout {
@@ -446,7 +450,6 @@ svg {
         border-top: 1vmin solid $g;
         box-shadow: inset 0vmin -0.6vmin 0 0 $p;
         bottom: -40%;
-        left: 0%;
       }
 
       &--eye {
