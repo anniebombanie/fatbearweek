@@ -241,7 +241,8 @@ svg textPath {
   height: 5vmin;
   display: block;
   background-color: transparent;
-  border-bottom: 0.5vmin solid #502141;
+  border-bottom: 0.6vmin solid #502141;
+  top: 0.1vmin;
 }
 
 .bear__mid--arm-l {
@@ -285,6 +286,8 @@ svg textPath {
 .bear__mid--arm-r::after {
   border-radius: 50% 20% 100% 0% / 0% 100% 100% 0%;
   border-right: 0.6vmin solid #502141;
+  -webkit-transform: rotate(1deg);
+          transform: rotate(1deg);
   left: -50%;
 }
 
@@ -515,24 +518,22 @@ svg textPath {
   width: 10vmin;
   height: 5vmin;
   background: #a3946e;
-  border-radius: 100% 14% 49% 0% / 100% 24% 99% 35%;
-  -webkit-transform: rotate(-5deg) skew(-25deg);
-          transform: rotate(-5deg) skew(-25deg);
+  border-radius: 100% 30% 45% 0% / 100% 50% 100% 35%;
+  -webkit-transform: rotate(5deg) skew(-25deg);
+          transform: rotate(5deg) skew(-25deg);
   border: 0.6vmin solid #502141;
-  top: 0%;
+  top: -5%;
   left: 40%;
 }
 
 .bear .fish__top::before {
   content: '';
-  width: 40vmin;
-  height: 6vmin;
+  width: 32vmin;
+  height: 7vmin;
   display: block;
   border-radius: 50% 50% 0% 0% / 100% 100% 0% 0%;
-  -webkit-transform: rotate(15deg);
-          transform: rotate(15deg);
   background: #a3946e;
-  top: 70%;
+  top: 50%;
   left: -150%;
   border: 0.5vmin solid #502141;
 }

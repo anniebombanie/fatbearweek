@@ -238,8 +238,8 @@ svg {
       &::after {
         @include pseduo-div( 8vmin, 5vmin );
         background-color: $t;
-        // box-shadow: inset -.5vmin 0.5vmin 0 0 $p;
-        border-bottom: 0.5vmin solid $p;
+        border-bottom: 0.6vmin solid $p;
+        top: 0.1vmin;
       }
     }
     &--arm-l {
@@ -250,7 +250,7 @@ svg {
       &::before {
         border-radius: 0% 40% 80% 0% / 0% 40% 60% 0%;
         background: linear-gradient( -5deg, $b3 36%, $b2 37% );
-        box-shadow: inset  1.5vmin -5vmin 0 -2vmin $b3;
+        box-shadow: inset 1.5vmin -5vmin 0 -2vmin $b3;
         right: -82%;
       }
 
@@ -276,6 +276,7 @@ svg {
       &::after {
         border-radius: 50% 20% 100% 0% / 0% 100% 100% 0% ;
         border-right: 0.6vmin solid $p;
+        transform: rotate( 1deg );
         left: -50%;
       }
     }
@@ -475,18 +476,18 @@ svg {
     &__top {
       @include w-h( 10vmin, 5vmin );
       background: $g;
-      border-radius: 100% 14% 49% 0% / 100% 24% 99% 35% ;
-      transform: rotate( -5deg ) skew( -25deg );
+      border-radius: 100% 30% 45% 0% / 100% 50% 100% 35% ;
+      transform: rotate( 5deg ) skew( -25deg );
       border: 0.6vmin solid $p;
-      top: 0%;
+      top: -5%;
       left: 40%;
 
       &::before {
-        @include pseduo-div( 40vmin, 6vmin );
+        @include pseduo-div( 32vmin, 7vmin );
         border-radius: 50% 50% 0% 0% / 100% 100% 0% 0%;
-        transform: rotate( 15deg );
+        // transform: rotate( -deg );
         background: $g;
-        top: 70%;
+        top: 50%;
         left: -150%;
         border: 0.5vmin solid $p;
       }
