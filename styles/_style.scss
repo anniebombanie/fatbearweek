@@ -21,7 +21,7 @@ $b2: #be7c5d;
 $b3: #84424d;
 $pk: #ff8d94;
 $g: #a3946e;
-$g2: #a78472;
+$g2: #907262;
 $w1: #f7e5dc;
 $w2: #d2c9c7;
 $p: #502141;
@@ -462,10 +462,10 @@ svg {
         background: linear-gradient( 10deg, $p 20%, $w2 20% );
         border-radius: 90% 0% 0% 100% / 100% 0% 0% 42%;
         transform: rotate( 15deg );
-        // border-bottom: 0.6vmin solid $p;
         border-top: 1vmin solid $g;
         box-shadow: inset 0vmin -0.6vmin 0 0 $p;
-        bottom: -40%;
+        bottom: -38%;
+        left: -2%;
       }
 
       &--eye {
@@ -473,7 +473,7 @@ svg {
         background: $p;
         border-radius: 70% 25% 25% 30% / 70% 50% 50% 30%;
         transform: rotate( -5deg );
-        top: 40%;
+        top: 33%;
         left: 25%;
 
         // &::before {
@@ -533,19 +533,32 @@ svg {
     }
 
     &__tail {
-      @include w-h( 8vmin, 4.5vmin );
-      border-radius: 0% 100% 100% 0% / 0% 100% 40% 100%;
-      background-color: $g;
-      transform: rotate( 18deg );
-      border: 0.6vmin solid $p;
-      bottom: -60%;
-      right: -10%;
-
-      &::before {
-        @include pseduo-div( 4vmin, 4vmin );
-        border-radius: 100% 14% 49% 0% / 100% 24% 99% 35% ;
-        transform: rotate( -5deg ) skew( -25deg );
+      @include w-h( 10vmin, 4.5vmin );
+        border-radius: 0% 100% 100% 0% / 0% 100% 50% 0%;
+        background-color: $g;
+        transform: rotate( 15deg );
         border: 0.6vmin solid $p;
+        bottom: -58%;
+        right: -10%;
+
+      &--top-fin {
+        @include w-h( 7.5vmin, 7vmin );
+        background: $g;
+        border: 0.6vmin solid $p;
+        transform: rotate( -60deg ) skewY( 40deg );
+        border-radius: 0% 100% 30% 50% / 0% 100% 15% 100%;
+        top: 100%;
+        right: -22%;
+      }
+
+      &--btm-fin {
+        @include w-h( 9vmin, 6.6vmin );
+        background: $g;
+        border: 0.6vmin solid $p;
+        transform: rotate( 100deg ) skewY( -20deg );
+        border-radius: 50% 30% 100% 0% / 100% 15% 100% 0%;
+        top: 138%;
+        right: -15%;
       }
     }
   }
