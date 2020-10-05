@@ -137,8 +137,8 @@ svg {
       @include pseduo-div( 57.6vmin, 68vmin );
       @include align-x-center;
       box-shadow:
-        inset 0.5vmin 2vmin 0 -1.2vmin $b1,
-        inset -0.5vmin 2vmin 0 -1.2vmin $b1;
+        inset 0.5vmin 3vmin 0 -1.5vmin $b1,
+        inset -0.5vmin 3vmin 0 -1.5vmin $b1;
       border-radius: 50% / 70% 70% 30% 30%;
       background:
         radial-gradient( 1% 0.3% at 50% 40.5%, $b2 20vmin, $t 21vmin ),
@@ -148,12 +148,12 @@ svg {
     }
 
     &::after {
-      @include pseduo-div( 23vmin, 1.4vmin );
+      @include pseduo-div( 26vmin, 1.8vmin );
       @include align-x-center;
-      top: 4.2%;
+      top: 3.6%;
       background:
-        linear-gradient( 55deg, $t 0.4vmin, $b1 0.5vmin, $b1 2vmin, $t 2.1vmin ),
-        linear-gradient( -55deg, $t 0.4vmin, $b1 0.5vmin, $b1 2vmin, $t 2.1vmin );
+        linear-gradient( 44deg, $t 1.4vmin, $b1 1.5vmin, $b1 3vmin, $t 3.1vmin ),
+        linear-gradient( -44deg, $t 1.4vmin, $b1 1.5vmin, $b1 3vmin, $t 3.1vmin );
     }
 
     &--snout {
@@ -200,7 +200,7 @@ svg {
       border-bottom: 0.2vmin solid $b1;
       border-radius: 50%;
       top: 23%;
-      animation: eyes-blink 8s infinite;
+      animation: eyes-blink 7s infinite;
     }
     &--eye-l {
       left: 37%;
@@ -224,7 +224,6 @@ svg {
         radial-gradient( circle at 2% 100%, $p 0.2vmin, $t 0.3vmin ),
         radial-gradient( circle at 98.2% 100%, $p 0.2vmin, $t 0.3vmin ),
         linear-gradient( 90deg, $b2 5%, $t 5%, $t 95%, $b2 95% );
-      // border: 1px solid green;
       top: 11%;
     }
 
@@ -270,7 +269,7 @@ svg {
     }
     &--arm-r {
       right: 4.3%;
-      border-radius: 50% 4% 80% 0% / 50% 30% 70% 0%;
+      border-radius: 50% 5% 80% 0% / 50% 30% 70% 0%;
       transform: rotate( -8deg );
 
       &::before {
@@ -308,7 +307,7 @@ svg {
       }
     }
     &--arm-outline-l {
-      left: 3%;
+      left: 3.05%;
       border-radius: 4% 50% 0% 88% / 30% 50% 0% 80%;
       transform: rotate( 8deg );
 
@@ -323,7 +322,7 @@ svg {
       }
     }
     &--arm-outline-r {
-      right: 3.16%;
+      right: 3.1%;
       border-radius: 50% 3% 80% 0% / 50% 20% 75% 0%;
       transform: rotate( -8deg );
 
