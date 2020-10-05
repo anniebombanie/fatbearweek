@@ -57,14 +57,14 @@ body {
   position: relative;
 }
 
-img {
-  height: 70vmin;
-  left: 50%;
-  opacity: 0.25;
-  position: fixed;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
+// img {
+//   height: 70vmin;
+//   left: 50%;
+//   opacity: 0.25;
+//   position: fixed;
+//   top: 50%;
+//   transform: translate(-50%, -50%);
+// }
 
 svg {
   top: -20%;
@@ -126,7 +126,7 @@ svg {
   }
 
   &__head {
-    @include w-h( 58.9vmin, 69vmin );
+    @include w-h( 58.8vmin, 69vmin );
     @include align-x-center;
     background:
       linear-gradient( $p 40%, $t 40% );
@@ -144,7 +144,6 @@ svg {
         radial-gradient( 1% 0.3% at 50% 40.5%, $b2 20vmin, $t 21vmin ),
         linear-gradient( $b2 40%, $t 40% );
       top: 1%;
-      clip-path: circle(50% at 50% 22%);
     }
 
     &::after {
@@ -152,8 +151,8 @@ svg {
       @include align-x-center;
       top: 3.6%;
       background:
-        linear-gradient( 44deg, $t 1.4vmin, $b1 1.5vmin, $b1 3vmin, $t 3.1vmin ),
-        linear-gradient( -44deg, $t 1.4vmin, $b1 1.5vmin, $b1 3vmin, $t 3.1vmin );
+        linear-gradient( 44deg, $t 1.4vmin, $b1 1.5vmin, $b1 3.05vmin, $t 3.1vmin ),
+        linear-gradient( -44deg, $t 1.4vmin, $b1 1.5vmin, $b1 3.05vmin, $t 3.1vmin );
     }
 
     &--snout {
@@ -200,7 +199,7 @@ svg {
       border-bottom: 0.2vmin solid $b1;
       border-radius: 50%;
       top: 23%;
-      animation: eyes-blink 7s infinite;
+      animation: eyes-blink 6s infinite;
     }
     &--eye-l {
       left: 37%;
@@ -244,7 +243,7 @@ svg {
       &::after {
         @include pseduo-div( 8vmin, 5vmin );
         background-color: $t;
-        border-bottom: 0.6vmin solid $p;
+        border-bottom: 0.7vmin solid $p;
         top: 0.1vmin;
       }
     }
@@ -256,7 +255,7 @@ svg {
       &::before {
         border-radius: 0% 40% 80% 0% / 0% 40% 60% 0%;
         background: linear-gradient( -5deg, $b3 36%, $b2 37% );
-        box-shadow: inset 1.5vmin -5vmin 0 -2vmin $b3;
+        box-shadow: inset 1.5vmin -4.95vmin 0 -2vmin $b3;
         right: -82%;
       }
 
@@ -275,7 +274,7 @@ svg {
       &::before {
         border-radius: 40% 0% 0% 80% / 40% 0% 0% 60%;
         background: linear-gradient( 5deg, $b3 36%, $b2 37% );
-        box-shadow: inset  -1.5vmin -5vmin 0 -2vmin $b3;
+        box-shadow: inset  -1.5vmin -4.95vmin 0 -2vmin $b3;
         left: -82%;
       }
 
@@ -289,7 +288,7 @@ svg {
 
     &--arm-outline-l,
     &--arm-outline-r {
-      @include w-h( 13.4vmin, 14vmin );
+      @include w-h( 13.3vmin, 14vmin );
       top: 13.5%;
       background: $p;
 
@@ -307,7 +306,7 @@ svg {
       }
     }
     &--arm-outline-l {
-      left: 3.05%;
+      left: 3.1%;
       border-radius: 4% 50% 0% 88% / 30% 50% 0% 80%;
       transform: rotate( 8deg );
 
@@ -322,7 +321,7 @@ svg {
       }
     }
     &--arm-outline-r {
-      right: 3.1%;
+      right: 3.2%;
       border-radius: 50% 3% 80% 0% / 50% 20% 75% 0%;
       transform: rotate( -8deg );
 
@@ -563,7 +562,7 @@ svg {
   }
 
   .shadow {
-    @include w-h( 45vmin, 6vmin );
+    @include w-h( 40vmin, 6vmin );
     @include align-x-center();
     background: $g2;
     border-radius: 50%;
