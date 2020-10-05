@@ -82,7 +82,7 @@ svg {
 }
 
 .text-shadow {
-  filter: drop-shadow( 0.2vmin 0.4vmin 0 $g );
+  filter: drop-shadow( 0.2vmin 0.3vmin 0 $g );
 }
 
 .bear {
@@ -137,8 +137,8 @@ svg {
       @include pseduo-div( 57.6vmin, 68vmin );
       @include align-x-center;
       box-shadow:
-        inset 0.5vmin 2vmin 0 -1vmin $b1,
-        inset -0.5vmin 2vmin 0 -1vmin $b1;
+        inset 0.5vmin 2vmin 0 -1.2vmin $b1,
+        inset -0.5vmin 2vmin 0 -1.2vmin $b1;
       border-radius: 50% / 70% 70% 30% 30%;
       background:
         radial-gradient( 1% 0.3% at 50% 40.5%, $b2 20vmin, $t 21vmin ),
@@ -200,6 +200,7 @@ svg {
       border-bottom: 0.2vmin solid $b1;
       border-radius: 50%;
       top: 23%;
+      animation: eyes-blink 8s infinite;
     }
     &--eye-l {
       left: 37%;
@@ -250,7 +251,7 @@ svg {
     }
     &--arm-l {
       left: 4.3%;
-      border-radius: 6% 50% 0% 80% / 35% 50% 0% 70%;
+      border-radius: 5% 50% 0% 80% / 35% 50% 0% 70%;
       transform: rotate( 8deg );
 
       &::before {
@@ -269,7 +270,7 @@ svg {
     }
     &--arm-r {
       right: 4.3%;
-      border-radius: 50% 5% 80% 0% / 50% 30% 70% 0%;
+      border-radius: 50% 4% 80% 0% / 50% 30% 70% 0%;
       transform: rotate( -8deg );
 
       &::before {
@@ -291,7 +292,7 @@ svg {
     &--arm-outline-r {
       @include w-h( 13.4vmin, 14vmin );
       top: 13.5%;
-      background-color: $p;
+      background: $p;
 
       &::before {
         @include pseduo-div( 12vmin, 10.3vmin );

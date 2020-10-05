@@ -62,8 +62,8 @@ svg textPath {
 }
 
 .text-shadow {
-  -webkit-filter: drop-shadow(0.2vmin 0.4vmin 0 #a3946e);
-          filter: drop-shadow(0.2vmin 0.4vmin 0 #a3946e);
+  -webkit-filter: drop-shadow(0.2vmin 0.3vmin 0 #a3946e);
+          filter: drop-shadow(0.2vmin 0.3vmin 0 #a3946e);
 }
 
 .bear {
@@ -135,8 +135,8 @@ svg textPath {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  -webkit-box-shadow: inset 0.5vmin 2vmin 0 -1vmin #dd9b70, inset -0.5vmin 2vmin 0 -1vmin #dd9b70;
-          box-shadow: inset 0.5vmin 2vmin 0 -1vmin #dd9b70, inset -0.5vmin 2vmin 0 -1vmin #dd9b70;
+  -webkit-box-shadow: inset 0.5vmin 2vmin 0 -1.2vmin #dd9b70, inset -0.5vmin 2vmin 0 -1.2vmin #dd9b70;
+          box-shadow: inset 0.5vmin 2vmin 0 -1.2vmin #dd9b70, inset -0.5vmin 2vmin 0 -1.2vmin #dd9b70;
   border-radius: 50% / 70% 70% 30% 30%;
   background: radial-gradient(1% 0.3% at 50% 40.5%, #be7c5d 20vmin, transparent 21vmin), -webkit-gradient(linear, left top, left bottom, color-stop(40%, #be7c5d), color-stop(40%, transparent));
   background: radial-gradient(1% 0.3% at 50% 40.5%, #be7c5d 20vmin, transparent 21vmin), linear-gradient(#be7c5d 40%, transparent 40%);
@@ -189,6 +189,8 @@ svg textPath {
   border-bottom: 0.2vmin solid #dd9b70;
   border-radius: 50%;
   top: 23%;
+  -webkit-animation: eyes-blink 8s infinite;
+          animation: eyes-blink 8s infinite;
 }
 
 .bear__head--eye-l {
@@ -253,7 +255,7 @@ svg textPath {
 
 .bear__mid--arm-l {
   left: 4.3%;
-  border-radius: 6% 50% 0% 80% / 35% 50% 0% 70%;
+  border-radius: 5% 50% 0% 80% / 35% 50% 0% 70%;
   -webkit-transform: rotate(8deg);
           transform: rotate(8deg);
 }
@@ -276,7 +278,7 @@ svg textPath {
 
 .bear__mid--arm-r {
   right: 4.3%;
-  border-radius: 50% 5% 80% 0% / 50% 30% 70% 0%;
+  border-radius: 50% 4% 80% 0% / 50% 30% 70% 0%;
   -webkit-transform: rotate(-8deg);
           transform: rotate(-8deg);
 }
@@ -301,7 +303,7 @@ svg textPath {
   width: 13.4vmin;
   height: 14vmin;
   top: 13.5%;
-  background-color: #502141;
+  background: #502141;
 }
 
 .bear__mid--arm-outline-l::before, .bear__mid--arm-outline-r::before {
