@@ -78,8 +78,11 @@ svg {
     fill: $w1;
     stroke: $p;
     stroke-width: 2;
-    text-shadow: 1vmin 1vmin 0 $g;
   }
+}
+
+.text-shadow {
+  filter: drop-shadow( 0.2vmin 0.4vmin 0 $g );
 }
 
 .bear {

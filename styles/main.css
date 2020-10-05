@@ -59,7 +59,11 @@ svg textPath {
   fill: #f7e5dc;
   stroke: #502141;
   stroke-width: 2;
-  text-shadow: 1vmin 1vmin 0 #a3946e;
+}
+
+.text-shadow {
+  -webkit-filter: drop-shadow(0.2vmin 0.4vmin 0 #a3946e);
+          filter: drop-shadow(0.2vmin 0.4vmin 0 #a3946e);
 }
 
 .bear {
