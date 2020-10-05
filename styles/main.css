@@ -9,6 +9,7 @@ html {
           box-sizing: inherit;
 }
 
+svg,
 .bear *,
 .bear *:after,
 .bear *:before {
@@ -30,10 +31,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   overflow: hidden;
   position: relative;
 }
@@ -49,22 +46,27 @@ img {
 }
 
 svg {
-  margin-top: -5%;
+  top: -20%;
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 svg textPath {
   font-family: 'Luckiest Guy', cursive;
+  text-transform: uppercase;
   text-align: center;
   font-size: 2.7rem;
   fill: #f7e5dc;
   stroke: #502141;
   stroke-width: 2;
+  text-shadow: 1vmin 1vmin 0 #a3946e;
 }
 
 .bear {
   width: 55vmin;
   height: 64vmin;
   position: relative;
+  margin-top: 10%;
 }
 
 .bear--ear-l, .bear--ear-r {
@@ -554,6 +556,8 @@ svg textPath {
   height: 7vmin;
   display: block;
   border-radius: 50% 50% 0% 0% / 100% 100% 0% 0%;
+  -webkit-transform: skewY(2deg);
+          transform: skewY(2deg);
   background: #a3946e;
   top: 50%;
   left: -150%;
@@ -590,8 +594,8 @@ svg textPath {
   height: 4.5vmin;
   border-radius: 0% 100% 100% 0% / 0% 100% 50% 0%;
   background-color: #a3946e;
-  -webkit-transform: rotate(15deg);
-          transform: rotate(15deg);
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
   border: 0.6vmin solid #502141;
   bottom: -58%;
   right: -10%;
@@ -599,7 +603,7 @@ svg textPath {
 
 .bear .fish__tail--top-fin {
   width: 7.5vmin;
-  height: 7vmin;
+  height: 7.7vmin;
   background: #a3946e;
   border: 0.6vmin solid #502141;
   -webkit-transform: rotate(-60deg) skewY(40deg);
@@ -617,7 +621,7 @@ svg textPath {
   -webkit-transform: rotate(100deg) skewY(-20deg);
           transform: rotate(100deg) skewY(-20deg);
   border-radius: 50% 30% 100% 0% / 100% 15% 100% 0%;
-  top: 138%;
+  top: 145%;
   right: -15%;
 }
 

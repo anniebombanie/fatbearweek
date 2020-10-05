@@ -6,6 +6,7 @@ html {
   box-sizing: inherit;
 }
 
+svg,
 .bear *,
 .bear *:after,
 .bear *:before {
@@ -52,7 +53,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   overflow: hidden;
   position: relative;
 }
@@ -67,22 +67,25 @@ img {
 }
 
 svg {
-  margin-top: -5%;
+  top: -20%;
+  transform: scale( 2 );
 
   textPath {
     font-family: 'Luckiest Guy', cursive;
+    text-transform: uppercase;
     text-align: center;
     font-size: 2.7rem;
     fill: $w1;
     stroke: $p;
     stroke-width: 2;
+    text-shadow: 1vmin 1vmin 0 $g;
   }
 }
 
 .bear {
   @include w-h( 55vmin, 64vmin );
   position: relative;
-  // margin-top: -10%;
+  margin-top: 10%;
 
   &--ear-l,
   &--ear-r {
@@ -475,14 +478,6 @@ svg {
         transform: rotate( -5deg );
         top: 33%;
         left: 25%;
-
-        // &::before {
-        //   @include pseduo-div( 2vmin, 0.6vmin );
-        //   background: $p;
-        //   border-radius: 25% / 50%;
-        //   transform: rotate( -75deg );
-        //   left: 19%;
-        // }
       }
     }
 
@@ -495,10 +490,11 @@ svg {
       top: -5%;
       left: 40%;
 
+      // top fin
       &::before {
         @include pseduo-div( 32vmin, 7vmin );
         border-radius: 50% 50% 0% 0% / 100% 100% 0% 0%;
-        // transform: rotate( -deg );
+        transform: skewY( 2deg );
         background: $g;
         top: 50%;
         left: -150%;
@@ -536,13 +532,13 @@ svg {
       @include w-h( 10vmin, 4.5vmin );
         border-radius: 0% 100% 100% 0% / 0% 100% 50% 0%;
         background-color: $g;
-        transform: rotate( 15deg );
+        transform: rotate( 20deg );
         border: 0.6vmin solid $p;
         bottom: -58%;
         right: -10%;
 
       &--top-fin {
-        @include w-h( 7.5vmin, 7vmin );
+        @include w-h( 7.5vmin, 7.7vmin );
         background: $g;
         border: 0.6vmin solid $p;
         transform: rotate( -60deg ) skewY( 40deg );
@@ -557,7 +553,7 @@ svg {
         border: 0.6vmin solid $p;
         transform: rotate( 100deg ) skewY( -20deg );
         border-radius: 50% 30% 100% 0% / 100% 15% 100% 0%;
-        top: 138%;
+        top: 145%;
         right: -15%;
       }
     }
